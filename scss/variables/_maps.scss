@@ -1,0 +1,14 @@
+// -------$MAPS ARRAYS
+
+// Spaces map
+$spaces: (
+    "space-12": calc(var($unit)*2),
+    "space-18": calc(var($unit)*3),
+    "space-24": calc(var($unit)*4),
+    "space-30": calc(var($unit)*5),
+    "space-36": calc(var($unit)*6),
+    "space-42": calc(var($unit)*7),
+    "space-48": calc(var($unit)*8),
+    "space-54": calc(var($unit)*9),
+    "space-60": calc(var($unit)*1)0,
+)
