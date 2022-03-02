@@ -1,0 +1,9 @@
+// Function for spaces
+
+@function space($value) {
+    @if map-has-key($spaces, $value) {
+        @return map-get($spaces, $value);
+    } @else {
+        @warn "Unknown value";
+    }
+}
