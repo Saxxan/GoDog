@@ -1,0 +1,18 @@
+.register {
+    padding: 12px;
+    color: $color-white;
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid $color-sec-tone-2;
+    border-radius: 24px;
+    background-color: $color-sec;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px $color-grey-dark;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        background-color: $color-sec-tone-2;
+        box-shadow: 1px 1px 1px $color-grey-dark;
+        transform: translate(3px, 3px);
+    }
+}
