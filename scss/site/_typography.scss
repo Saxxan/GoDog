@@ -1,0 +1,32 @@
+h1 {
+    @include font-size(32px, 50px);
+}
+
+h2 {
+    @include font-size(25px, 35px);
+}
+
+h3 {
+    @include font-size(23px, 32px);
+}
+
+h4 {
+    @include font-size(20px, 30px);
+}
+
+h5 {
+    @include font-size(18px, 27px);
+}
+
+h6 {
+    @include font-size(16px, 25px);
+}
+
+p {
+    @include font-size(15px, 24px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-title;
+}
+

@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: $font-main;
+
+    @media (prefers-color-scheme: dark) {
+            color: $color-white;
+            background-color: $color-black;
+    }
+
+    @media (prefers-color-scheme: light) {
+            color: $color-black;
+            background-color: $color-white;
+    }
+}
