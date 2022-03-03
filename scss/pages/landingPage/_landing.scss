@@ -1,0 +1,35 @@
+.landing--Header {
+    width: 90vw;
+    margin: 0 auto;
+    margin: space("space-6") auto;
+
+    &__title {
+        height: 1.7em;
+        overflow: hidden;
+
+        &__list {
+            list-style: none;
+            margin: 0;
+            animation: change 10s ease-out infinite;
+    
+            &__option {
+                margin: space("space-6");
+            }
+        }
+
+        @keyframes change {
+            25% {
+               transform: translateY(-1.7em); 
+            }
+            50% {
+                transform: translateY(-3.4em); 
+            }
+            75% {
+                transform: translateY(-1.7em); 
+            }
+            100% {
+                    transform: translateY(0); 
+            }
+        }
+    }
+}
