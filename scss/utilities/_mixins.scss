@@ -6,7 +6,6 @@
 $font-lock-min:  400px !default; 
 $font-lock-max: 1000px !default;
 
-//  font-size 
 @mixin font-size(
   $min,                         // font-size 
   $max: null,                   // optional maximum font size
@@ -34,4 +33,26 @@ $font-lock-max: 1000px !default;
 //  strip units helper function
 @function num($input){ 
   @return $input/($input * 0 + 1); 
+}
+
+
+// ==============================
+// Mediaqueries mixin
+// ==============================
+
+
+@mixin phone-dimensions {
+  @media screen and (max-width: 500px) { @content; }
+}
+@mixin tablet-portrait-dimensions {
+  @media screen and (min-width: 500px) { @content; }
+}
+@mixin tablet-landscape-dimensions {
+  @media screen and (min-width: 800px) { @content; }
+}
+@mixin deskopt-dimensions {
+  @media screen and (min-width: 1280px) { @content; }
+}
+@mixin big-deskopt-dimensions {
+  @media screen and (min-width: 1920px) { @content; }
 }

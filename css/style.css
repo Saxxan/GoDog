@@ -211,56 +211,59 @@ html, body {
 }
 
 .landing--Header {
-  width: 90vw;
-  margin: 0 auto;
-  margin: 6px auto;
+  width: 100vw;
+  height: 30vh;
+  background: url(/media/landing-header-image.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .landing--Header__title {
   height: 1.7em;
   overflow: hidden;
+  padding: 12px;
 }
 .landing--Header__title__list {
   list-style: none;
   margin: 0;
   -webkit-animation: change 10s ease-out infinite;
           animation: change 10s ease-out infinite;
+  -webkit-transform: translateY(-7%);
+          transform: translateY(-7%);
 }
 .landing--Header__title__list__option {
   margin: 6px;
 }
 @-webkit-keyframes change {
-  25% {
-    -webkit-transform: translateY(-1.7em);
-            transform: translateY(-1.7em);
+  25%, 40%, 75%, 90% {
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
   }
-  50% {
-    -webkit-transform: translateY(-3.4em);
-            transform: translateY(-3.4em);
+  50%, 65% {
+    -webkit-transform: translateY(-75%);
+            transform: translateY(-75%);
   }
-  75% {
-    -webkit-transform: translateY(-1.7em);
-            transform: translateY(-1.7em);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+  15%, 100% {
+    -webkit-transform: translateY(-7%);
+            transform: translateY(-7%);
   }
 }
 @keyframes change {
-  25% {
-    -webkit-transform: translateY(-1.7em);
-            transform: translateY(-1.7em);
+  25%, 40%, 75%, 90% {
+    -webkit-transform: translateY(-40%);
+            transform: translateY(-40%);
   }
-  50% {
-    -webkit-transform: translateY(-3.4em);
-            transform: translateY(-3.4em);
+  50%, 65% {
+    -webkit-transform: translateY(-75%);
+            transform: translateY(-75%);
   }
-  75% {
-    -webkit-transform: translateY(-1.7em);
-            transform: translateY(-1.7em);
+  15%, 100% {
+    -webkit-transform: translateY(-7%);
+            transform: translateY(-7%);
   }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+}
+@media screen and (min-width: 500px) {
+  .landing--Header {
+    height: 40vh;
   }
 }
