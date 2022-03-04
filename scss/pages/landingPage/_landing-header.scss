@@ -1,15 +1,21 @@
+// -------------$LANDING PAGE HEADER
+
 .landing--Header {
     width: 100vw;
-    height: 30vh;
+    height: 20vh;
     background: url(/media/landing-header-image.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     &__title {
         height: 1.7em;
         overflow: hidden;
-        padding: space("space-12");
+        padding: space("12");
 
         &__list {
             list-style: none;
@@ -18,7 +24,7 @@
             transform: translateY(-7%);
     
             &__option {
-                margin: space("space-6");
+                margin: space("6");
             }
         }
 

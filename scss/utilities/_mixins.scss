@@ -36,10 +36,10 @@ $font-lock-max: 1000px !default;
 }
 
 
+
 // ==============================
 // Mediaqueries mixin
 // ==============================
-
 
 @mixin phone-dimensions {
   @media screen and (max-width: 500px) { @content; }

@@ -1,10 +1,12 @@
+// ---------------$BUTTONS
+
 .ctas {
-    padding: space("space-6");
+    padding: space("6");
     @include font-size(13px, 20px);
     color: $color-white;
     font-weight: 600;
     cursor: pointer;
-    border-radius: space("space-6");
+    border-radius: space("6");
     box-shadow: 1px 2px 2px $color-grey-dark;
     transform: translate(0, -2px);
     transition: all .5s ease-in-out;

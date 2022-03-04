@@ -171,18 +171,8 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: "Karla", sans-serif;
-}
-@media (prefers-color-scheme: dark) {
-  html, body {
-    color: #FFFFFF;
-    background-color: #1B1A1A;
-  }
-}
-@media (prefers-color-scheme: light) {
-  html, body {
-    color: #1B1A1A;
-    background-color: #FFFFFF;
-  }
+  color: #FFFFFF;
+  background-color: #1B1A1A;
 }
 
 .topbar {
@@ -193,9 +183,9 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: between;
+      -ms-flex-pack: between;
+          justify-content: between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -248,11 +238,21 @@ html, body {
 
 .landing--Header {
   width: 100vw;
-  height: 30vh;
+  height: 20vh;
   background: url(/media/landing-header-image.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .landing--Header__title {
   height: 1.7em;
