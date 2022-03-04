@@ -1,9 +1,11 @@
+// -------------$TOPBAR
+
 .topbar {
     width: 100vw;
     height: 10vh;
     background: linear-gradient(to bottom, $color-main, $color-main-tone-2);
     display: flex;
-    justify-content: space-between;
+    justify-content: between;
     align-items: center;
 
     &__logo {
@@ -33,20 +35,20 @@
         &__button {
 
             @include tablet-portrait-dimensions {
-                padding: space("space-6");
+                padding: space("6");
             }
 
             @include tablet-landscape-dimensions {
-                margin: space("space-6");
+                margin: space("6");
             }
         }
 
         @include tablet-portrait-dimensions {
-            margin: space("space-6");
+            margin: space("6");
         }
     
         @include tablet-landscape-dimensions {
-            margin: space("space-12");
+            margin: space("12");
         }
     }
 }
