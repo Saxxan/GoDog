@@ -1,32 +1,26 @@
 button {
-    padding: space("space-12");
+    padding: space("space-6");
     color: $color-white;
-    @include font-size(15px, 20px);
+    @include font-size(13px, 20px);
     font-weight: 700;
     cursor: pointer;
     border-radius: space("space-24");
-    box-shadow: 4px 4px 4px $color-grey-dark;
+    box-shadow: 3px 3px 3px $color-grey-dark;
+    transform: translate(-3px, -3px);
+    transition: all .3s ease-out;
+
+    &:hover {
+        box-shadow: 1px 1px 1px $color-grey-dark;
+        transform: translate(0, 0);
+    }
 }
 
 .register {
     border: 2px solid $color-sec;
     background-color: $color-sec-tone-2;
-    transition: all .5s ease-in-out;
-
-    &:hover {
-        background-color: $color-sec-tone-2;
-        box-shadow: 1px 1px 1px $color-grey-dark;
-        transform: translate(3px, 3px);
-    }
 }
 
 .login {
     border: 2px solid $color-main-tone-2;
     background-color: transparent;
-    transition: all .5s ease-in-out;
-
-    &:hover {
-        box-shadow: 1px 1px 1px $color-grey-dark;
-        transform: translate(3px, 3px);
-    }
 }

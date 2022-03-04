@@ -1,0 +1,30 @@
+.topbar {
+    width: 100vw;
+    height: 10vh;
+    background: linear-gradient(to bottom, $color-main, $color-main-tone-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        & svg {
+            stroke: $color-white;
+        }
+
+        &__title {
+            transition: transform .3s ease-out;
+
+            &:hover {
+                transform: translateY(3px);
+            }
+        }
+
+        &:link, &:visited, &:active {
+            text-decoration: none;
+            color: $color-white;
+        }
+    }
+}
