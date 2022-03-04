@@ -1,44 +1,49 @@
-button {
+.ctas {
     padding: space("space-6");
     @include font-size(13px, 20px);
     color: $color-white;
     font-weight: 600;
     cursor: pointer;
     border-radius: space("space-6");
-    box-shadow: 3px 3px 3px $color-grey-dark;
-    transform: translate(-2px, -2px);
+    box-shadow: 1px 2px 2px $color-grey-dark;
+    transform: translate(0, -2px);
     transition: all .5s ease-in-out;
+    transition: active .2s;
 
     &:hover {
-        box-shadow: 1px 1px 1px $color-grey-dark;
-        transform: translate(0, 0);
-    }
-
-    @include tablet-portrait-dimensions {
-        padding: space("space-6");
-        margin: space("space-6");
-    }
-
-    @include tablet-landscape-dimensions {
-        margin: space("space-12");
+        box-shadow: 0px 1px 1px $color-grey-dark;
+        transform: translate(0, -1px);
     }
 }
 
 .register {
-    border: 2px solid $color-sec-tone-2;
-    background-color: $color-sec;
+    background-color: $color-sec-tone-2;
+    border-color: $color-sec-tone-2;
 
     &:hover {
-        background-color: $color-main-tone-2;
-        background-color: $color-sec-tone-2;
+        background: linear-gradient(to bottom, 
+        $color-sec-tone-2, 
+        $color-sec,
+        $color-sec-tone-2);
+    }
+
+    &:active {
+        background: $color-sec-tone-2
     }
 }
 
 .login {
-    border: 2px solid $color-main-tone-2;
-    background-color: transparent;
+    background-color: $color-main;
+    border-color: $color-main;
 
     &:hover {
-        background-color: $color-main-tone-2;
+        background: linear-gradient(to bottom, 
+        $color-main, 
+        $color-main-tone-2,
+        $color-main);
+    }
+
+    &:active {
+        background: $color-main;
     }
 }

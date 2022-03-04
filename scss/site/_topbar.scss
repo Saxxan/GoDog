@@ -27,4 +27,26 @@
             color: $color-white;
         }
     }
+
+    &__buttons {
+
+        &__button {
+
+            @include tablet-portrait-dimensions {
+                padding: space("space-6");
+            }
+
+            @include tablet-landscape-dimensions {
+                margin: space("space-6");
+            }
+        }
+
+        @include tablet-portrait-dimensions {
+            margin: space("space-6");
+        }
+    
+        @include tablet-landscape-dimensions {
+            margin: space("space-12");
+        }
+    }
 }
