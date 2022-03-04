@@ -1,15 +1,15 @@
 button {
   padding: 6px;
   color: #FFFFFF;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
-  border-radius: 24px;
+  border-radius: 6px;
   -webkit-box-shadow: 3px 3px 3px #474747;
           box-shadow: 3px 3px 3px #474747;
-  -webkit-transform: translate(-3px, -3px);
-          transform: translate(-3px, -3px);
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 button {
   font-size: 13px;
@@ -30,15 +30,33 @@ button:hover {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
+@media screen and (min-width: 500px) {
+  button {
+    padding: 6px;
+    margin: 6px;
+  }
+}
+@media screen and (min-width: 800px) {
+  button {
+    margin: 12px;
+  }
+}
 
 .register {
-  border: 2px solid #a180e0;
+  border: 2px solid #5127a0;
+  background-color: #a180e0;
+}
+.register:hover {
+  background-color: #8cd9d2;
   background-color: #5127a0;
 }
 
 .login {
   border: 2px solid #8cd9d2;
   background-color: transparent;
+}
+.login:hover {
+  background-color: #8cd9d2;
 }
 
 h1 {
