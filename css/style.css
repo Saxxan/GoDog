@@ -1,62 +1,82 @@
-.ctas {
+.btn {
   padding: 6px;
   color: #FFFFFF;
   font-weight: 600;
   cursor: pointer;
-  border-radius: 6px;
-  -webkit-box-shadow: 1px 2px 2px #474747;
-          box-shadow: 1px 2px 2px #474747;
-  -webkit-transform: translate(0, -2px);
-          transform: translate(0, -2px);
+  border-radius: 24px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transition: active 0.2s;
   transition: active 0.2s;
 }
-.ctas {
+.btn {
   font-size: 13px;
 }
 @media (min-width: 400px) {
-  .ctas {
+  .btn {
     font-size: calc( 13px + 7 * (100vw - 400px) / 600 );
   }
 }
 @media (min-width: 1000px) {
-  .ctas {
+  .btn {
     font-size: 20px;
   }
 }
-.ctas:hover {
-  -webkit-box-shadow: 0px 1px 1px #474747;
-          box-shadow: 0px 1px 1px #474747;
-  -webkit-transform: translate(0, -1px);
-          transform: translate(0, -1px);
-}
 
 .register {
-  background-color: #5127a0;
-  border-color: #5127a0;
+  background-color: #a180e0;
+  border: 2px solid #5127a0;
+  overflow: hidden;
+}
+.register__text--hover {
+  display: none;
 }
 .register:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#5127a0), color-stop(#a180e0), to(#5127a0));
-  background: linear-gradient(to bottom, #5127a0, #a180e0, #5127a0);
-}
-.register:active {
   background: #5127a0;
+  width: 150px;
+  height: 32px;
+}
+.register:hover .register__text {
+  width: 300px;
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
+  -webkit-animation: text-scroll 10s linear infinite;
+          animation: text-scroll 10s linear infinite;
+}
+.register:hover .register__text--hover {
+  display: inline;
 }
 
 .login {
-  background-color: #11978c;
-  border-color: #11978c;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
 }
 .login:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#11978c), color-stop(#8cd9d2), to(#11978c));
-  background: linear-gradient(to bottom, #11978c, #8cd9d2, #11978c);
-}
-.login:active {
-  background: #11978c;
+  background: #FFFFFF;
+  color: #11978c;
 }
 
+@-webkit-keyframes text-scroll {
+  from {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes text-scroll {
+  from {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
 h1 {
   margin: 0;
 }
@@ -178,8 +198,8 @@ html, body {
 .topbar {
   width: 100vw;
   height: 10vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#11978c), to(#8cd9d2));
-  background: linear-gradient(to bottom, #11978c, #8cd9d2);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-26%, #11978c), color-stop(132%, #8cd9d2));
+  background: linear-gradient(180deg, #11978c -26%, #8cd9d2 132%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,19 +221,12 @@ html, body {
 .topbar__logo svg {
   stroke: #FFFFFF;
 }
-.topbar__logo__title {
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-}
-.topbar__logo__title:hover {
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
-}
 .topbar__logo:link, .topbar__logo:visited, .topbar__logo:active {
   text-decoration: none;
   color: #FFFFFF;
+}
+.topbar__buttons {
+  margin-right: 6px;
 }
 @media screen and (min-width: 500px) {
   .topbar__buttons__button {
