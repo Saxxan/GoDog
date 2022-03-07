@@ -1,7 +1,6 @@
 // -------------$TOPBAR
 
 .topbar {
-    width: 100vw;
     height: 10vh;
     background: linear-gradient(180deg , $color-main -26%, $color-main-tone-2 132%);
     display: flex;
@@ -11,6 +10,7 @@
     &__logo {
         display: flex;
         align-items: center;
+        padding: space("12");
 
         & svg {
             stroke: $color-white;
@@ -26,6 +26,11 @@
         margin-right: space("6");
 
         &__button {
+
+            @include phone-dimensions {
+                max-width: 150px;
+                max-height: 32px;
+            }
 
             @include tablet-portrait-dimensions {
                 padding: space("6");
