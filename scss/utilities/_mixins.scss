@@ -56,3 +56,14 @@ $font-lock-max: 1000px !default;
 @mixin big-deskopt-dimensions {
   @media screen and (min-width: 1920px) { @content; }
 }
+
+
+
+// ==============================
+// Mixin basic style inputs
+// ==============================
+
+@mixin inputStyle {
+  border: 2px solid $color-main;
+  border-radius: space("24");
+}
