@@ -1,8 +1,7 @@
 // -------------$LANDING PAGE HEADER
 
 .landing--Header {
-    width: 100vw;
-    height: 20vh;
+    height: 25vh;
     background-image: url("/media/landing-header-image.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,11 +19,12 @@
         &__list {
             list-style: none;
             margin: 0;
+            padding: 0;
             animation: change 10s ease-out infinite;
             transform: translateY(-7%);
     
             &__option {
-                margin: space("6");
+                margin: space("6") 0;
             }
         }
 
@@ -42,6 +42,6 @@
     }
 
     @include tablet-portrait-dimensions {
-        height: 40vh;
+        height: 50vh;
     }
 }

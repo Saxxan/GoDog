@@ -25,11 +25,12 @@ h6 {
     @include font-size(16px, 25px);
 }
 
-p {
+p, label {
     @include font-size(15px, 24px);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-title;
+    font-weight: 500;
 }
 

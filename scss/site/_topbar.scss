@@ -1,9 +1,8 @@
 // -------------$TOPBAR
 
 .topbar {
-    width: 100vw;
     height: 10vh;
-    background: linear-gradient(to bottom, $color-main, $color-main-tone-2);
+    background: linear-gradient(180deg , $color-main -26%, $color-main-tone-2 132%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,17 +10,10 @@
     &__logo {
         display: flex;
         align-items: center;
+        padding: space("12");
 
         & svg {
             stroke: $color-white;
-        }
-
-        &__title {
-            transition: transform .3s ease-out;
-
-            &:hover {
-                transform: translateY(3px);
-            }
         }
 
         &:link, &:visited, &:active {
@@ -31,8 +23,14 @@
     }
 
     &__buttons {
+        margin-right: space("6");
 
         &__button {
+
+            @include phone-dimensions {
+                max-width: 150px;
+                max-height: 32px;
+            }
 
             @include tablet-portrait-dimensions {
                 padding: space("6");
