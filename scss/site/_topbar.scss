@@ -26,14 +26,11 @@
         margin-right: space("6");
 
         &__button {
-
-            @include phone-dimensions {
-                max-width: 150px;
-                max-height: 32px;
-            }
+            max-width: 120px;
 
             @include tablet-portrait-dimensions {
                 padding: space("6");
+                max-width: 150px;
             }
 
             @include tablet-landscape-dimensions {

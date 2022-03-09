@@ -2,7 +2,7 @@
 
 .btn {
     padding: space("6");
-    @include font-size(13px, 20px);
+    @include font-size(13px, 18px);
     color: $color-white;
     font-weight: 600;
     cursor: pointer;
@@ -26,11 +26,11 @@
         background: $color-sec-tone-2;
 
         .register__text {
-            width: 200px;
             animation: text-scroll 6s linear infinite;
+            width: 200px;
 
             @include tablet-landscape-dimensions {
-                width: auto;
+                width: 250px;
             }
 
             &--hover {

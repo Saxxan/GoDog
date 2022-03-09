@@ -12,12 +12,12 @@
 }
 @media (min-width: 400px) {
   .btn {
-    font-size: calc( 13px + 7 * (100vw - 400px) / 600 );
+    font-size: calc( 13px + 5 * (100vw - 400px) / 600 );
   }
 }
 @media (min-width: 1000px) {
   .btn {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -33,13 +33,13 @@
   background: #5127a0;
 }
 .register:hover .register__text {
-  width: 200px;
   -webkit-animation: text-scroll 6s linear infinite;
           animation: text-scroll 6s linear infinite;
+  width: 200px;
 }
 @media screen and (min-width: 800px) {
   .register:hover .register__text {
-    width: auto;
+    width: 250px;
   }
 }
 .register:hover .register__text--hover {
@@ -373,15 +373,13 @@ html, body {
 .topbar__buttons {
   margin-right: 6px;
 }
-@media screen and (max-width: 500px) {
-  .topbar__buttons__button {
-    max-width: 150px;
-    max-height: 32px;
-  }
+.topbar__buttons__button {
+  max-width: 120px;
 }
 @media screen and (min-width: 500px) {
   .topbar__buttons__button {
     padding: 6px;
+    max-width: 150px;
   }
 }
 @media screen and (min-width: 800px) {
