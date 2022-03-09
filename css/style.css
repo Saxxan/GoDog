@@ -6,8 +6,6 @@
   border-radius: 24px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-transition: active 0.2s;
-  transition: active 0.2s;
 }
 .btn {
   font-size: 13px;
@@ -36,10 +34,8 @@
 }
 .register:hover .register__text {
   width: 200px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-animation: text-scroll 8s linear infinite;
-          animation: text-scroll 8s linear infinite;
+  -webkit-animation: text-scroll 6s linear infinite;
+          animation: text-scroll 6s linear infinite;
 }
 @media screen and (min-width: 800px) {
   .register:hover .register__text {
@@ -60,22 +56,22 @@
 }
 
 @-webkit-keyframes text-scroll {
-  from {
+  0% {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
-  to {
+  100% {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
 }
 
 @keyframes text-scroll {
-  from {
+  0% {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
   }
-  to {
+  100% {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
@@ -95,7 +91,7 @@ input[class^=form__input], [class^=form__input__tag] {
   background-color: #11978c;
 }
 .form__input__tag {
-  width: 40%;
+  width: 30%;
   padding: 6px 12px;
   background-color: inherit;
 }
@@ -104,11 +100,13 @@ input[class^=form__input], [class^=form__input__tag] {
   border: 2px solid #11978c;
   border-radius: 24px;
   padding: 6px 12px;
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
   display: block;
 }
 .form__input__box {
-  width: 60%;
+  width: 70%;
   padding: 6px 12px;
 }
 .form__input__servicios {
@@ -175,6 +173,11 @@ input[class^=form__input], [class^=form__input__tag] {
 .form__input__submit {
   min-width: 200px;
   padding: 12px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
   border-radius: 30px;
   border: 2px solid #11978c;
   border-radius: 24px;
@@ -476,6 +479,9 @@ html, body {
   max-width: 900px;
   margin: 0 auto;
 }
+.landing__search__title {
+  padding: 0 12px;
+}
 
 .landing__servicios {
   padding: 12px;
@@ -508,6 +514,14 @@ html, body {
   width: 75%;
 }
 
+.landing__branding {
+  padding: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.landing__branding__title {
+  padding: 0 12px;
+}
 .landing__branding__list {
   list-style: none;
 }
@@ -515,4 +529,43 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.landing__branding__list__perk__info {
+  width: 70%;
+  padding: 6px;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+  grid-template-columns: repeat(3, auto);
+  background-color: #474747;
+}
+.footer {
+  font-size: 14px;
+}
+@media (min-width: 400px) {
+  .footer {
+    font-size: calc( 14px + 6 * (100vw - 400px) / 600 );
+  }
+}
+@media (min-width: 1000px) {
+  .footer {
+    font-size: 20px;
+  }
+}
+.footer__list {
+  list-style: none;
+  padding: 6px;
+  text-align: center;
+}
+.footer__list__opt {
+  padding: 6px 0;
 }

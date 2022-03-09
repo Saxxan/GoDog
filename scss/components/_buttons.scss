@@ -8,7 +8,6 @@
     cursor: pointer;
     border-radius: space("24");
     transition: all .5s ease-in-out;
-    transition: active .2s;
 }
 
 .register {
@@ -28,8 +27,7 @@
 
         .register__text {
             width: 200px;
-            transform: translateX(100%);
-            animation: text-scroll 8s linear infinite;
+            animation: text-scroll 6s linear infinite;
 
             @include tablet-landscape-dimensions {
                 width: auto;
@@ -37,6 +35,7 @@
 
             &--hover {
                 display: inline;
+                // transform: translateX(10%);
             }
         }
     }
@@ -53,10 +52,10 @@
 }
 
 @keyframes text-scroll {
-    from {
+    0% {
         transform: translateX(100%);
     }
-    to {
+    100% {
         transform: translateX(-100%);
     }
 }
