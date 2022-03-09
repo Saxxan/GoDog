@@ -1,0 +1,16 @@
+svg {
+    stroke: $color-sec;
+    width: 60px;
+    height: 60px;
+
+    @include tablet-landscape-dimensions {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.tick {
+    fill: $color-sec;
+    width: 30px;
+    height: 30px;
+}

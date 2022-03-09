@@ -9,6 +9,7 @@
 @import "components/buttons";
 @import "components/cards";
 @import "components/inputs";
+@import "components/svg";
 
 @import "site/typography";
 @import "site/site";
@@ -17,5 +18,7 @@
 
 @import "pages/landingPage/landing-header";
 @import "pages/landingPage/landing-search";
+@import "pages/landingPage/landing-servicios";
+@import "pages/landingPage/landing-branding";
 
 @import "site/footer";

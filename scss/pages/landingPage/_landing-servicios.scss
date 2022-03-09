@@ -1,0 +1,29 @@
+.landing__servicios {
+    padding: space("12");
+    max-width: 800px;
+    margin: 0 auto;
+
+    &__title {
+        padding: 0 space("12");
+    }
+
+    &__list {
+        list-style: none;
+
+        &__servicio {
+            display: flex;
+            align-items: center;
+            margin: space("18") auto;
+            gap: space("6");
+
+            @include tablet-landscape-dimensions {
+                gap: space("36");
+            }
+
+            &__info {
+                padding: space("12");
+                width: 75%;
+            }
+        }
+    }
+}

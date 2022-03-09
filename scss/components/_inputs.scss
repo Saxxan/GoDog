@@ -1,30 +1,32 @@
+input[class^="form__input"], [class^="form__input__tag"]{
+    @include inputStyle;
+}
+
 .form__input {
-    background-color: $color-main;
-    border: 2px solid $color-main;
-    border-radius: space("24");
     display: flex;
     margin: space("12") 0;
+    @include inputStyle;
+    background-color: $color-main;
 
     &__tag {
-        width: 40%;
+        width: 30%;
         padding: space("6") space("12");
-        border: inherit;
-        border-radius: inherit;
+        background-color: inherit;
 
         &--servicio {
             background-color: $color-main;
             border: 2px solid $color-main;
             border-radius: space("24");
             padding: space("6") space("12");
+            width: 100%;
+            margin: 0 auto;
             text-align: center;
             display: block;
         }
     }
 
     &__box {
-        width: 60%;
-        border: inherit;
-        border-radius: inherit;
+        width: 70%;
         padding: space("6") space("12");
     }
 
@@ -36,8 +38,9 @@
         border: none;
 
         &__opt {
-            width: 150px;
-            height: 150px;
+            width: 140px;
+            height: 140px;
+            cursor: pointer;
             border-radius: space("6");
 
             display: flex;
@@ -45,27 +48,53 @@
             justify-content: center;
             align-items: center;
 
-            svg {
-                stroke: $color-sec;
-                width: space("60");
-                height: space("60");
-            }
-
             p {
                 text-align: center;
             }
 
-            input {
-                display: none;
-            }
-
             &:hover {
                 background-color: $color-grey-dark;
-                cursor: pointer;
                 box-shadow:
-                2.7px 2.7px 11.5px rgba(0, 0, 0, 0.041),
+                2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041),
                 20px 20px 92px rgba(0, 0, 0, 0.07);
             }
+
+            @include tablet-portrait-dimensions {
+                width: 190px;
+                height: 190px;
+                padding: space("12");
+            }
+        }
+
+        input[id^="checkbox--"] {
+            display: none;
+
+            @for $i from 1 through 4 {
+                &:nth-of-type(#{$i}):checked {
+                    & ~ label:nth-of-type(#{$i}) {
+                        border: 1px solid $color-main;
+                    }
+                }
+            }
+        }
+    }
+
+    &__submit {
+        min-width: 200px;
+        padding: space("12"); 
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%); 
+        cursor: pointer;
+        border-radius: space("30");
+        @include inputStyle;
+        background-color: $color-main;
+        color: $color-white;
+
+        @include font-size(20px, 30px);
+
+        @include tablet-landscape-dimensions {
+            border-radius: space("42");
         }
     }
 }

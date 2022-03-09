@@ -1,0 +1,24 @@
+.landing__branding {
+    padding: space("12");
+    max-width: 800px;
+    margin: 0 auto;
+
+    &__title {
+        padding: 0 space("12");
+    }
+
+    &__list {
+        list-style: none;
+
+        &__perk {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            &__info {
+                width: 70%;
+                padding: space("6");
+            }
+        }
+    }
+}

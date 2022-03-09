@@ -1,6 +1,6 @@
 // -------------$LANDING PAGE HEADER
 
-.landing--Header {
+.landing__Header {
     height: 25vh;
     background-image: url("/media/landing-header-image.webp");
     background-size: cover;
@@ -15,6 +15,11 @@
         height: 1.7em;
         overflow: hidden;
         padding: space("12");
+        margin: 0;
+
+        @include tablet-landscape-dimensions {
+            margin-left: 15vw;
+        }
 
         &__list {
             list-style: none;
