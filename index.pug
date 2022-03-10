@@ -1,4 +1,4 @@
-extends template.pug
+extends pug/template.pug
 
 block page-content 
     header.landing__Header 
@@ -10,7 +10,7 @@ block page-content
                 li.landing__Header__title__list__option puntual! 
             h1.landing__Header__title para tu mascota.
 
-    include search-filter-component.pug 
+    include pug/search-filter-component.pug 
 
     //- Sección de servicios
     section.landing__servicios
