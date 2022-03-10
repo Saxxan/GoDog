@@ -1,0 +1,41 @@
+form.landing__search
+    h2.landing__search__title Busca a tu cuidador ideal ya! 
+    label.landing__search__input--text.form__input
+        span.form__input__tag Dónde 
+        input.form__input__box(
+            type='text'
+            id='cp'
+            name='cp'
+            placeholder='Código postal'
+        ) 
+    label.landing__search__input--text.form__input
+        span.form__input__tag Cuándo 
+        input.form__input__box(
+            type='date'
+            id='fecha-ini'
+            name='fecha-ini'
+        )
+        input.form__input__box(
+            type='date'
+            id='fecha-fin'
+            name='fecha-fin'
+        )
+    p.form__input__tag--servicio Qué servicio buscas
+    fieldset.landing__search__servicios.form__input__servicios 
+        input(type='checkbox', id='checkbox--paseo')
+        input(type='checkbox', id='checkbox--visita')
+        input(type='checkbox', id='checkbox--day')
+        input(type='checkbox', id='checkbox--night')
+        label.form__input__servicios__opt(for='checkbox--paseo')
+            svg 
+            p Paseo
+        label.form__input__servicios__opt(for='checkbox--visita')
+            svg 
+            p Visita a domicilio
+        label.form__input__servicios__opt(for='checkbox--day')
+            svg 
+            p Guardería de día
+        label.form__input__servicios__opt(for='checkbox--night')
+            svg 
+            p Alojamiento de mascota
+    button.form__input__submit(type='submit', value='Buscar') Buscar

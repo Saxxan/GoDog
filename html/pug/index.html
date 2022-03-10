@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+</html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GoDog - Search</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&amp;family=Sawarabi+Mincho&amp;display=swap">
+	<link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+	<nav class="topbar"><a class="topbar__logo" href="/html/pug/search.html">
+			<svg> </svg>
+			<h1 class="topbar__logo__title">GoDog</h1>
+		</a>
+		<section class="topbar__buttons">
+			<button class="topbar__buttons__button btn login">Log in </button>
+			<button class="topbar__buttons__button btn register">
+				<div class="register__text">Hazte cuidador <span class="register__text--hover">- Regístrate</span></div>
+			</button>
+		</section>
+	</nav>
+	<header class="landing__Header">
+		<h1 class="landing__Header__title">Encuentra un cuidador </h1>
+		<h1 class="landing__Header__title">
+			<ul class="landing__Header__title__list">
+				<li class="landing__Header__title__list__option">de confianza! </li>
+				<li class="landing__Header__title__list__option">responsable!</li>
+				<li class="landing__Header__title__list__option">puntual! </li>
+			</ul>
+			<h1 class="landing__Header__title">para tu mascota.</h1>
+		</h1>
+	</header>
+	<form class="landing__search">
+		<h2 class="landing__search__title">Busca a tu cuidador ideal ya! </h2>
+		<label class="landing__search__input--text form__input"><span class="form__input__tag">Dónde </span>
+			<input class="form__input__box" type="text" id="cp" name="cp" placeholder="Código postal">
+		</label>
+		<label class="landing__search__input--text form__input"><span class="form__input__tag">Cuándo </span>
+			<input class="form__input__box" type="date" id="fecha-ini" name="fecha-ini">
+			<input class="form__input__box" type="date" id="fecha-fin" name="fecha-fin">
+		</label>
+		<p class="form__input__tag--servicio">Qué servicio buscas</p>
+		<fieldset class="landing__search__servicios form__input__servicios">
+			<input type="checkbox" id="checkbox--paseo">
+			<input type="checkbox" id="checkbox--visita">
+			<input type="checkbox" id="checkbox--day">
+			<input type="checkbox" id="checkbox--night">
+			<label class="form__input__servicios__opt" for="checkbox--paseo">
+				<svg> </svg>
+				<p>Paseo</p>
+			</label>
+			<label class="form__input__servicios__opt" for="checkbox--visita">
+				<svg> </svg>
+				<p>Visita a domicilio</p>
+			</label>
+			<label class="form__input__servicios__opt" for="checkbox--day">
+				<svg> </svg>
+				<p>Guardería de día</p>
+			</label>
+			<label class="form__input__servicios__opt" for="checkbox--night">
+				<svg> </svg>
+				<p>Alojamiento de mascota</p>
+			</label>
+		</fieldset>
+		<button class="form__input__submit" type="submit" value="Buscar">Buscar</button>
+	</form>
+	<section class="landing__servicios">
+		<h2 class="landing__servicios__title">Servicios </h2>
+		<ul class="landing__servicios__list">
+			<li class="landing__servicios__list__servicio">
+				<svg> </svg>
+				<p class="landing__servicios__list__servicio__info">El cuidador sacará a su perro de paseo por su zona.
+				</p>
+			</li>
+			<li class="landing__servicios__list__servicio">
+				<svg> </svg>
+				<p class="landing__servicios__list__servicio__info">El cuidador irá a su domicilio para alimentar y
+					pasar tiempo
+					con su mascota.</p>
+			</li>
+			<li class="landing__servicios__list__servicio">
+				<svg> </svg>
+				<p class="landing__servicios__list__servicio__info">El cuidador aloja a su perro los días en los que
+					necesites
+					que alguien se haga cargo de su mascota.</p>
+			</li>
+			<li class="landing__servicios__list__servicio">
+				<svg> </svg>
+				<p class="landing__servicios__list__servicio__info">Su perro pasará la noche en casa de su cuidador para
+					los
+					periodos que esté fuera de casa.</p>
+			</li>
+		</ul>
+	</section>
+	<section class="landing__branding">
+		<h2 class="landing__branding__title">Por qué GoDog </h2>
+		<ul class="landing__branding__list">
+			<li class="landing__branding__list__perk">
+				<svg class="tick"> </svg>
+				<p class="landing__branding__list__perk__info">Atención y cuidado personalizado.</p>
+			</li>
+			<li class="landing__branding__list__perk">
+				<svg class="tick"> </svg>
+				<p class="landing__branding__list__perk__info">Cuidadores amantes de los animales comprometidos.</p>
+			</li>
+			<li class="landing__branding__list__perk">
+				<svg class="tick"> </svg>
+				<p class="landing__branding__list__perk__info">Reserva online.</p>
+			</li>
+			<li class="landing__branding__list__perk">
+				<svg class="tick"> </svg>
+				<p class="landing__branding__list__perk__info">Pago seguro.</p>
+			</li>
+			<li class="landing__branding__list__perk">
+				<svg class="tick"> </svg>
+				<p class="landing__branding__list__perk__info">Opciones de seguimiento.</p>
+			</li>
+			<li class="landing__branding__list__perk">
+				<svg class="tick"> </svg>
+				<p class="landing__branding__list__perk__info">Perfiles revisados y validados.</p>
+			</li>
+			<li class="landing__branding__list__perk">
+				<svg class="tick"> </svg>
+				<p class="landing__branding__list__perk__info">Mascotas aseguradas.</p>
+			</li>
+			<li class="landing__branding__list__perk">
+				<svg class="tick"> </svg>
+				<p class="landing__branding__list__perk__info">Protección de datos.</p>
+			</li>
+		</ul>
+	</section>
+	<footer class="footer">
+		<ul class="footer__list">
+			<li class="footer__list__opt">Seguridad</li>
+			<li class="footer__list__opt">Garantía</li>
+		</ul>
+		<ul class="footer__list">
+			<li class="footer__list__opt">Política de privacidad</li>
+			<li class="footer__list__opt">Política de cookies </li>
+			<li class="footer__list__opt">Términos y condiciones</li>
+		</ul>
+		<ul class="footer__list">
+			<li class="footer__list__opt">Contacta</li>
+			<li class="footer__list__opt">Twitter </li>
+			<li class="footer__list__opt">Instagram</li>
+		</ul>
+	</footer>
+</body>
