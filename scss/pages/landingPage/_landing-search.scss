@@ -1,9 +1,3 @@
 .landing__search {
-    padding: space("12");
-    max-width: 900px;
-    margin: 0 auto;
-
-    &__title {
-        padding: 0 space("12");
-    }
+    @include landingSectionLayout (900px);
 }

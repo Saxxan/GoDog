@@ -1,11 +1,5 @@
 .landing__branding {
-    padding: space("12");
-    max-width: 800px;
-    margin: 0 auto;
-
-    &__title {
-        padding: 0 space("12");
-    }
+    @include landingSectionLayout (800px);
 
     &__list {
         list-style: none;

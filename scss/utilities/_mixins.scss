@@ -1,6 +1,5 @@
-// ==============================
+
 // Font size mixin
-// ==============================
 
 //  default font scale bounding
 $font-lock-min:  400px !default; 
@@ -37,9 +36,7 @@ $font-lock-max: 1000px !default;
 
 
 
-// ==============================
 // Mediaqueries mixin
-// ==============================
 
 @mixin phone-dimensions {
   @media screen and (max-width: 500px) { @content; }
@@ -59,11 +56,18 @@ $font-lock-max: 1000px !default;
 
 
 
-// ==============================
 // Mixin basic style inputs
-// ==============================
 
 @mixin inputStyle {
   border: 2px solid $color-main;
   border-radius: space("24");
+}
+
+
+// Mixin landing sections layout and dimensions
+
+@mixin landingSectionLayout ($max-width) {
+  max-width: $max-width;
+  padding: space("12");
+  margin: 0 auto;
 }

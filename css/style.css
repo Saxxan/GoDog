@@ -1,3 +1,7 @@
+h2[class$=title] {
+  padding: 0 12px;
+}
+
 .btn {
   padding: 6px;
   color: #FFFFFF;
@@ -204,7 +208,7 @@ input[class^=form__input], [class^=form__input__tag] {
 }
 
 svg {
-  stroke: #a180e0;
+  stroke: #11978c;
   width: 60px;
   height: 60px;
 }
@@ -216,7 +220,7 @@ svg {
 }
 
 .tick {
-  fill: #a180e0;
+  fill: #11978c;
   width: 30px;
   height: 30px;
 }
@@ -399,7 +403,7 @@ html, body {
 }
 
 .landing__Header {
-  height: 25vh;
+  height: 40vh;
   background-image: url("/media/landing-header-image.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -418,10 +422,9 @@ html, body {
 .landing__Header__title {
   height: 1.7em;
   overflow: hidden;
-  padding: 12px;
   margin: 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
   .landing__Header__title {
     margin-left: 15vw;
   }
@@ -473,21 +476,15 @@ html, body {
 }
 
 .landing__search {
-  padding: 12px;
   max-width: 900px;
+  padding: 12px;
   margin: 0 auto;
-}
-.landing__search__title {
-  padding: 0 12px;
 }
 
 .landing__servicios {
-  padding: 12px;
   max-width: 800px;
+  padding: 12px;
   margin: 0 auto;
-}
-.landing__servicios__title {
-  padding: 0 12px;
 }
 .landing__servicios__list {
   list-style: none;
@@ -513,12 +510,9 @@ html, body {
 }
 
 .landing__branding {
-  padding: 12px;
   max-width: 800px;
+  padding: 12px;
   margin: 0 auto;
-}
-.landing__branding__title {
-  padding: 0 12px;
 }
 .landing__branding__list {
   list-style: none;
