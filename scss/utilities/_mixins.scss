@@ -69,5 +69,5 @@ $font-lock-max: 1000px !default;
 @mixin landingSectionLayout ($max-width) {
   max-width: $max-width;
   padding: space("12");
-  margin: 0 auto;
+  margin: 10% auto;
 }

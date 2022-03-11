@@ -5,7 +5,7 @@ h2[class$=title] {
 .btn {
   padding: 6px;
   color: #FFFFFF;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   border-radius: 24px;
   -webkit-transition: all 0.5s ease-in-out;
@@ -83,6 +83,7 @@ h2[class$=title] {
 input[class^=form__input], [class^=form__input__tag] {
   border: 2px solid #11978c;
   border-radius: 24px;
+  font-weight: 600;
 }
 
 .form__input {
@@ -185,8 +186,10 @@ input[class^=form__input], [class^=form__input__tag] {
   border-radius: 30px;
   border: 2px solid #11978c;
   border-radius: 24px;
-  background-color: #11978c;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10.93%, #8CD9D3), color-stop(133.33%, #A17FE0));
+  background: linear-gradient(180deg, #8CD9D3 10.93%, #A17FE0 133.33%);
   color: #FFFFFF;
+  font-weight: 700;
 }
 .form__input__submit {
   font-size: 20px;
@@ -327,8 +330,8 @@ p, label {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 500;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
 }
 
 * {
@@ -369,6 +372,8 @@ html, body {
 }
 .topbar__logo svg {
   stroke: #FFFFFF;
+  width: 60px;
+  height: 60px;
 }
 .topbar__logo:link, .topbar__logo:visited, .topbar__logo:active {
   text-decoration: none;
@@ -384,21 +389,6 @@ html, body {
   .topbar__buttons__button {
     padding: 6px;
     max-width: 150px;
-  }
-}
-@media screen and (min-width: 800px) {
-  .topbar__buttons__button {
-    margin: 6px;
-  }
-}
-@media screen and (min-width: 500px) {
-  .topbar__buttons {
-    margin: 6px;
-  }
-}
-@media screen and (min-width: 800px) {
-  .topbar__buttons {
-    margin: 12px;
   }
 }
 
@@ -420,9 +410,10 @@ html, body {
           justify-content: center;
 }
 .landing__Header__title {
-  height: 1.7em;
   overflow: hidden;
-  margin: 0;
+  margin: 0 auto;
+  padding: auto 6px;
+  height: 1.7em;
 }
 @media screen and (min-width: 500px) {
   .landing__Header__title {
@@ -431,42 +422,46 @@ html, body {
 }
 .landing__Header__title__list {
   list-style: none;
-  margin: 0;
   padding: 0;
   -webkit-animation: change 10s ease-out infinite;
           animation: change 10s ease-out infinite;
-  -webkit-transform: translateY(-7%);
-          transform: translateY(-7%);
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
 }
 .landing__Header__title__list__option {
-  margin: 6px 0;
+  margin: 12px 0;
+}
+@media screen and (min-width: 800px) {
+  .landing__Header__title__list__option {
+    margin: 18px 0;
+  }
 }
 @-webkit-keyframes change {
   25%, 40%, 75%, 90% {
-    -webkit-transform: translateY(-40%);
-            transform: translateY(-40%);
+    -webkit-transform: translateY(-55%);
+            transform: translateY(-55%);
   }
   50%, 65% {
-    -webkit-transform: translateY(-75%);
-            transform: translateY(-75%);
+    -webkit-transform: translateY(-90%);
+            transform: translateY(-90%);
   }
   15%, 100% {
-    -webkit-transform: translateY(-7%);
-            transform: translateY(-7%);
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
   }
 }
 @keyframes change {
   25%, 40%, 75%, 90% {
-    -webkit-transform: translateY(-40%);
-            transform: translateY(-40%);
+    -webkit-transform: translateY(-55%);
+            transform: translateY(-55%);
   }
   50%, 65% {
-    -webkit-transform: translateY(-75%);
-            transform: translateY(-75%);
+    -webkit-transform: translateY(-90%);
+            transform: translateY(-90%);
   }
   15%, 100% {
-    -webkit-transform: translateY(-7%);
-            transform: translateY(-7%);
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
   }
 }
 @media screen and (min-width: 500px) {
@@ -478,13 +473,13 @@ html, body {
 .landing__search {
   max-width: 900px;
   padding: 12px;
-  margin: 0 auto;
+  margin: 10% auto;
 }
 
 .landing__servicios {
   max-width: 800px;
   padding: 12px;
-  margin: 0 auto;
+  margin: 10% auto;
 }
 .landing__servicios__list {
   list-style: none;
@@ -512,7 +507,7 @@ html, body {
 .landing__branding {
   max-width: 800px;
   padding: 12px;
-  margin: 0 auto;
+  margin: 10% auto;
 }
 .landing__branding__list {
   list-style: none;

@@ -1,5 +1,6 @@
 input[class^="form__input"], [class^="form__input__tag"]{
     @include inputStyle;
+    font-weight: 600;
 }
 
 .form__input {
@@ -88,8 +89,9 @@ input[class^="form__input"], [class^="form__input__tag"]{
         cursor: pointer;
         border-radius: space("30");
         @include inputStyle;
-        background-color: $color-main;
+        background: linear-gradient(180deg, #8CD9D3 10.93%, #A17FE0 133.33%);
         color: $color-white;
+        font-weight: 700;
 
         @include font-size(20px, 30px);
 
