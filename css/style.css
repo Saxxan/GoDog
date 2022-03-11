@@ -204,7 +204,7 @@ input[class^=form__input], [class^=form__input__tag] {
 }
 
 svg {
-  stroke: #a180e0;
+  stroke: #11978c;
   width: 60px;
   height: 60px;
 }
@@ -216,7 +216,7 @@ svg {
 }
 
 .tick {
-  fill: #a180e0;
+  fill: #11978c;
   width: 30px;
   height: 30px;
 }
@@ -399,7 +399,7 @@ html, body {
 }
 
 .landing__Header {
-  height: 25vh;
+  height: 40vh;
   background-image: url("/media/landing-header-image.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -421,7 +421,7 @@ html, body {
   padding: 12px;
   margin: 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 500px) {
   .landing__Header__title {
     margin-left: 15vw;
   }
