@@ -8,6 +8,11 @@
     cursor: pointer;
     border-radius: space("24");
     transition: all .5s ease-in-out;
+
+    &--big {
+        position: relative;
+        left: 50%;
+    }
 }
 
 .register {

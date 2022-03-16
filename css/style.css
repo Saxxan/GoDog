@@ -24,6 +24,10 @@ h2[class$=title] {
     font-size: 18px;
   }
 }
+.btn--big {
+  position: relative;
+  left: 50%;
+}
 
 .register {
   background-color: #a180e0;
@@ -473,13 +477,13 @@ html, body {
 .landing__search {
   max-width: 900px;
   padding: 12px;
-  margin: 10% auto;
+  margin: 5vh auto;
 }
 
 .landing__servicios {
   max-width: 800px;
   padding: 12px;
-  margin: 10% auto;
+  margin: 5vh auto;
 }
 .landing__servicios__list {
   list-style: none;
@@ -507,7 +511,7 @@ html, body {
 .landing__branding {
   max-width: 800px;
   padding: 12px;
-  margin: 10% auto;
+  margin: 5vh auto;
 }
 .landing__branding__list {
   list-style: none;
