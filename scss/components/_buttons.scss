@@ -15,7 +15,11 @@
 }
 
 .register--big {
-    @include width(140px, 400px);
+    @include width(170px, 400px);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5vh;
 }
 
 .register, .register--big {
@@ -25,8 +29,8 @@
     transition: all .5s ease-out;
 
     &__text--hover {
-        display: inline;
-        float: left;
+        position: absolute;
+        transform: translateX(-125%);
         opacity: 0;
     }
 
