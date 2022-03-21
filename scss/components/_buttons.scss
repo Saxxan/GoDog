@@ -7,40 +7,41 @@
     font-weight: 700;
     cursor: pointer;
     border-radius: space("24");
-    transition: all .5s ease-in-out;
-
-    &--big {
-        position: relative;
-        left: 50%;
-    }
+    transition: all 1s ease-in-out;
 }
 
 .register {
+    @include width(110px, 150px);
+}
+
+.register--big {
+    @include width(140px, 400px);
+}
+
+.register, .register--big {
     background-color: $color-sec;
-    border: 2px solid $color-sec-tone-2;
+    border: 2px solid $color-sec;
     overflow: hidden;
+    transition: all .5s ease-out;
 
-    &__text {
-
-        &--hover{
-            display: none;
-        }
+    &__text--hover {
+        display: inline;
+        float: left;
+        opacity: 0;
     }
 
     &:hover {
         background: $color-sec-tone-2;
+        border: 2px solid $color-sec-tone-2;
 
         .register__text {
-            animation: text-scroll 6s linear infinite;
-            width: 200px;
 
-            @include tablet-landscape-dimensions {
-                width: 250px;
+            &--default {
+                opacity: 0;
             }
 
             &--hover {
-                display: inline;
-                // transform: translateX(10%);
+                opacity: 1;
             }
         }
     }
@@ -53,14 +54,5 @@
     &:hover {
         background: $color-white;
         color: $color-main;
-    }
-}
-
-@keyframes text-scroll {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
     }
 }

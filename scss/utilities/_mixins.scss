@@ -29,6 +29,33 @@ $font-lock-max: 1000px !default;
     }
 }
 
+
+// Width responsive mixin
+
+@mixin width(
+  $min,                         // font-size 
+  $max: null,                   // optional maximum font size
+  $lock-min: $font-lock-min,  // optional minimum viewport width 
+  $lock-max: $font-lock-max   // optional maximum viewport width 
+  ){
+    & { width: $min; }
+    @if $max {
+      @media (min-width: $lock-min) { 
+        & { 
+          width: calc(
+            #{$min} + 
+            #{num($max) - num($min)} * 
+            (100vw - #{$lock-min}) / 
+            #{num($lock-max) - num($lock-min)}
+          ); 
+        } 
+      }
+      @media (min-width: $lock-max){ 
+        & { width: $max; } 
+      }
+    }
+}
+
 //  strip units helper function
 @function num($input){ 
   @return $input/($input * 0 + 1); 

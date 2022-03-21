@@ -28,11 +28,8 @@
         margin-right: space("6");
 
         &__button {
-            max-width: 120px;
-
             @include tablet-portrait-dimensions {
                 padding: space("6");
-                max-width: 150px;
             }
         }
     }
