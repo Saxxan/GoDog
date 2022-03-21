@@ -1,5 +1,5 @@
 .landing__servicios {
-    @include landingSectionLayout (800px);
+    @include landingSectionLayout (1000px);
 
     &__list {
         list-style: none;
@@ -16,7 +16,7 @@
 
             &__info {
                 padding: space("12");
-                width: 75%;
+                width: 70%;
             }
         }
     }

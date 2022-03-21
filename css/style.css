@@ -1,5 +1,25 @@
 h2[class$=title] {
   padding: 0 12px;
+  margin: 18px 30px;
+}
+
+img[class$=__img] {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  img[class$=__img] {
+    display: block;
+  }
+}
+
+div[class$=__container] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .btn {
@@ -40,11 +60,18 @@ h2[class$=title] {
 }
 
 .register--big {
-  width: 140px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 5vh;
+}
+.register--big {
+  width: 170px;
 }
 @media (min-width: 400px) {
   .register--big {
-    width: calc( 140px + 260 * (100vw - 400px) / 600 );
+    width: calc( 170px + 230 * (100vw - 400px) / 600 );
   }
 }
 @media (min-width: 1000px) {
@@ -61,8 +88,9 @@ h2[class$=title] {
   transition: all 0.5s ease-out;
 }
 .register__text--hover, .register--big__text--hover {
-  display: inline;
-  float: left;
+  position: absolute;
+  -webkit-transform: translateX(-125%);
+          transform: translateX(-125%);
   opacity: 0;
 }
 .register:hover, .register--big:hover {
@@ -182,14 +210,15 @@ input[class^=form__input], [class^=form__input__tag] {
 }
 .form__input__submit {
   padding: 12px;
+  margin: 10vh auto;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   cursor: pointer;
-  border-radius: 30px;
-  border: 2px solid #8cd9d2;
-  background: #8cd9d2;
+  border-radius: 36px;
+  border: 2px solid #11978c;
+  background-color: #11978c;
   color: #FFFFFF;
   font-weight: 700;
 }
@@ -211,12 +240,12 @@ input[class^=form__input], [class^=form__input__tag] {
 }
 @media (min-width: 400px) {
   .form__input__submit {
-    width: calc( 140px + 60 * (100vw - 400px) / 600 );
+    width: calc( 140px + 160 * (100vw - 400px) / 600 );
   }
 }
 @media (min-width: 1000px) {
   .form__input__submit {
-    width: 200px;
+    width: 300px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -225,7 +254,7 @@ input[class^=form__input], [class^=form__input__tag] {
   }
 }
 .form__input__submit:hover {
-  background: color-sec;
+  background-color: color-sec;
   border: 2px solid color-sec;
 }
 
@@ -488,13 +517,13 @@ html, body {
 .landing__search {
   max-width: 900px;
   padding: 12px;
-  margin: 5vh auto;
+  margin: 10vh auto;
 }
 
 .landing__servicios {
-  max-width: 800px;
+  max-width: 1000px;
   padding: 12px;
-  margin: 5vh auto;
+  margin: 10vh auto;
 }
 .landing__servicios__list {
   list-style: none;
@@ -516,13 +545,13 @@ html, body {
 }
 .landing__servicios__list__servicio__info {
   padding: 12px;
-  width: 75%;
+  width: 70%;
 }
 
 .landing__branding {
-  max-width: 800px;
+  max-width: 1000px;
   padding: 12px;
-  margin: 5vh auto;
+  margin: 10vh auto;
 }
 .landing__branding__list {
   list-style: none;

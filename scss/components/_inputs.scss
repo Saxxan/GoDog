@@ -82,26 +82,27 @@ input[class^="form__input"], [class^="form__input__tag"]{
 
     &__submit {
         padding: space("12"); 
+        margin: 10vh auto;
         position: relative;
         left: 50%;
         transform: translateX(-50%); 
         cursor: pointer;
-        border-radius: space("30");
-        border: 2px solid $color-main-tone-2;
-        background: $color-main-tone-2;
+        border-radius: space("36");
+        border: 2px solid $color-main;
+        background-color: $color-main;
         color: $color-white;
         font-weight: 700;
 
         @include font-size(20px, 30px);
 
-        @include width(140px, 200px);
+        @include width(140px, 300px);
 
         @include tablet-landscape-dimensions {
             border-radius: space("42");
         }
 
         &:hover {
-            background: color-sec;
+            background-color: color-sec;
             border: 2px solid color-sec;
         }
     }
