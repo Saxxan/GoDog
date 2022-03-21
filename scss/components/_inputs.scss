@@ -1,5 +1,6 @@
 input[class^="form__input"], [class^="form__input__tag"]{
     @include inputStyle;
+    font-weight: 600;
 }
 
 .form__input {
@@ -80,21 +81,28 @@ input[class^="form__input"], [class^="form__input__tag"]{
     }
 
     &__submit {
-        min-width: 200px;
         padding: space("12"); 
         position: relative;
         left: 50%;
         transform: translateX(-50%); 
         cursor: pointer;
         border-radius: space("30");
-        @include inputStyle;
-        background-color: $color-main;
+        border: 2px solid $color-main-tone-2;
+        background: $color-main-tone-2;
         color: $color-white;
+        font-weight: 700;
 
         @include font-size(20px, 30px);
 
+        @include width(140px, 200px);
+
         @include tablet-landscape-dimensions {
             border-radius: space("42");
+        }
+
+        &:hover {
+            background: color-sec;
+            border: 2px solid color-sec;
         }
     }
 }

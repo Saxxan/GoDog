@@ -4,16 +4,16 @@ head
 	meta(charset='utf-8')
 	meta(http-equiv='x-ua-compatible', content='ie=edge')
 	meta(name='viewport', content='width=device-width, initial-scale=1.0')
-	title GoDog - Search
+	title GoDog
 	link(rel='preconnect' href='https://fonts.googleapis.com')
-	link(rel='preconnect' href='https://fonts.gstatic.com', crossorigin)
-	link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Sawarabi+Mincho&display=swap')
-	link(rel="stylesheet", href="../../css/style.css")
+	link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+	link(href='https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Karla:wght@400;600;700&display=swap' rel='stylesheet')
+	link(rel='stylesheet' href='../css/style.css')
 body
 
 	//- Topbar
 	nav.topbar
-		a.topbar__logo(href="/html/index.html")
+		a.topbar__logo(href='/html/pug/index.html')
 			include svg/icon-dog.pug
 			h1.topbar__logo__title GoDog
 		section.topbar__buttons

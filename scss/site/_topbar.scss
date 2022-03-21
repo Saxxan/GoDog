@@ -14,6 +14,8 @@
 
         & svg {
             stroke: $color-white;
+            width: 60px;
+            height: 60px;
         }
 
         &:link, &:visited, &:active {
@@ -26,24 +28,9 @@
         margin-right: space("6");
 
         &__button {
-            max-width: 120px;
-
             @include tablet-portrait-dimensions {
                 padding: space("6");
-                max-width: 150px;
             }
-
-            @include tablet-landscape-dimensions {
-                margin: space("6");
-            }
-        }
-
-        @include tablet-portrait-dimensions {
-            margin: space("6");
-        }
-    
-        @include tablet-landscape-dimensions {
-            margin: space("12");
         }
     }
 }

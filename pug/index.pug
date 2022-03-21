@@ -1,4 +1,4 @@
-extends pug/template.pug
+extends template.pug
 
 block page-content 
     header.landing__Header 
@@ -10,23 +10,23 @@ block page-content
                 li.landing__Header__title__list__option puntual! 
             h1.landing__Header__title para tu mascota.
 
-    include pug/search-filter-component.pug 
+    include search-filter-component.pug 
 
     //- Sección de servicios
     section.landing__servicios
         h2.landing__servicios__title Servicios 
         ul.landing__servicios__list 
             li.landing__servicios__list__servicio
-                include ./pug/svg/icon-walk.pug
+                include svg/icon-walk.pug
                 p.landing__servicios__list__servicio__info El cuidador sacará a su perro de paseo por su zona.
             li.landing__servicios__list__servicio
-                include ./pug/svg/icon-visit.pug
+                include svg/icon-visit.pug
                 p.landing__servicios__list__servicio__info El cuidador irá a su domicilio para alimentar y pasar tiempo con su mascota.
             li.landing__servicios__list__servicio
-                include ./pug/svg/icon-nursery.pug
+                include svg/icon-nursery.pug
                 p.landing__servicios__list__servicio__info El cuidador aloja a su perro los días en los que necesites que alguien se haga cargo de su mascota.
             li.landing__servicios__list__servicio
-                include ./pug/svg/icon-night.pug
+                include svg/icon-night.pug
                 p.landing__servicios__list__servicio__info Su perro pasará la noche en casa de su cuidador para los periodos que esté fuera de casa.
     
 
@@ -35,26 +35,31 @@ block page-content
         h2.landing__branding__title Por qué GoDog 
         ul.landing__branding__list 
             li.landing__branding__list__perk
-                include ./pug/svg/icon-tick.pug                
+                include svg/icon-tick.pug                
                 p.landing__branding__list__perk__info Atención y cuidado personalizado.
             li.landing__branding__list__perk
-                include ./pug/svg/icon-tick.pug                
+                include svg/icon-tick.pug                
                 p.landing__branding__list__perk__info Cuidadores amantes de los animales comprometidos.
             li.landing__branding__list__perk
-                include ./pug/svg/icon-tick.pug                
+                include svg/icon-tick.pug                
                 p.landing__branding__list__perk__info Reserva online.
             li.landing__branding__list__perk
-                include ./pug/svg/icon-tick.pug                
+                include svg/icon-tick.pug                
                 p.landing__branding__list__perk__info Pago seguro.
             li.landing__branding__list__perk
-                include ./pug/svg/icon-tick.pug                
+                include svg/icon-tick.pug                
                 p.landing__branding__list__perk__info Opciones de seguimiento.
             li.landing__branding__list__perk
-                include ./pug/svg/icon-tick.pug                
+                include svg/icon-tick.pug                
                 p.landing__branding__list__perk__info Perfiles revisados y validados.
             li.landing__branding__list__perk
-                include ./pug/svg/icon-tick.pug                
+                include svg/icon-tick.pug                
                 p.landing__branding__list__perk__info Mascotas aseguradas.
             li.landing__branding__list__perk
-                include ./pug/svg/icon-tick.pug                
+                include svg/icon-tick.pug                
                 p.landing__branding__list__perk__info Protección de datos.
+
+    //- CTA final de landing page
+    button.btn--big.register
+        div.register__text Hazte cuidador 
+            span.register__text--hover - Regístrate
