@@ -20,12 +20,17 @@ const { default: axios } = require("axios");
 
 // import * as users from './users.json';
 
+var cp = '';
+var from = '';
+var to = '';
+var services = '';
+var servicio = '';
+
 function filterSearch (){
-    var cp = document.getElementById('cp').value;
-    var from = document.getElementById('from').value;
-    var to = document.getElementById('to').value;
-    var services = document.querySelectorAll('.servicio');
-    var servicio = '';
+    cp = document.getElementById('cp').value;
+    from = document.getElementById('from').value;
+    to = document.getElementById('to').value;
+    services = document.querySelectorAll('.servicio');
 
     debugger;
 
@@ -42,12 +47,12 @@ function filterSearch (){
 
     debugger;
 
-
+    
 }
 
 
 // ******************************
-// Function print users filtered
+// Function print users card
 // ******************************
 
 const cards = document.querySelector('.cards__container');
@@ -79,5 +84,17 @@ function printCard (i){
                 </footer>
             </article>
             `
+        })
+}
+
+
+// ****************************
+// Function get users filtered
+// ****************************
+
+function getUsers (){
+    axios.get('./users.json')
+        .then(function(response){
+            // Código de comparación entre valor de inputs y datos usuarios
         })
 }
