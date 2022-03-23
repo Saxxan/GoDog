@@ -19,9 +19,13 @@ function getUsers(){
     //         console.log(users);
     //     })
 
-    const response = fetch('../js/users.json');
-    const users = JSON.stringify(response);
-    console.log(users);
+    fetch('users.json')
+        .then(res => res.json())
+        .then(data => {
+            data.results.forEach(user => {
+                console.log(user);
+            });
+        });
 }
 
 

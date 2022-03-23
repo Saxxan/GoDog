@@ -514,7 +514,7 @@ html, body {
   }
 }
 
-.landing__search {
+.search {
   max-width: 900px;
   padding: 12px;
   margin: 10vh auto;
