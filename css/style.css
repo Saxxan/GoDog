@@ -22,6 +22,22 @@ div[class$=__container] {
           flex-direction: row;
 }
 
+.modal {
+  width: 250px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #474747;
+  border-radius: 6px;
+  z-index: 2;
+  display: none;
+  -webkit-box-shadow: 0px 0px 5px 3px #3a3939;
+          box-shadow: 0px 0px 5px 3px #3a3939;
+}
+
 .btn {
   padding: 6px;
   color: #FFFFFF;
@@ -368,12 +384,12 @@ p, label {
 }
 @media (min-width: 400px) {
   p, label {
-    font-size: calc( 15px + 9 * (100vw - 400px) / 600 );
+    font-size: calc( 15px + 5 * (100vw - 400px) / 600 );
   }
 }
 @media (min-width: 1000px) {
   p, label {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -517,16 +533,17 @@ html, body {
 .landing__search {
   max-width: 900px;
   padding: 12px;
-  margin: 10vh auto;
+  margin: 5vh auto;
 }
 
 .landing__servicios {
   max-width: 1000px;
   padding: 12px;
-  margin: 10vh auto;
+  margin: 5vh auto;
 }
 .landing__servicios__list {
   list-style: none;
+  margin-left: 12px;
 }
 .landing__servicios__list__servicio {
   display: -webkit-box;
@@ -551,7 +568,7 @@ html, body {
 .landing__branding {
   max-width: 1000px;
   padding: 12px;
-  margin: 10vh auto;
+  margin: 5vh auto;
 }
 .landing__branding__list {
   list-style: none;

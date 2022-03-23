@@ -3,6 +3,7 @@
 
     &__list {
         list-style: none;
+        margin-left: space("12");
 
         &__servicio {
             display: flex;
