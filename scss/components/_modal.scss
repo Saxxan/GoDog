@@ -1,0 +1,38 @@
+.modal {
+    @include widthAndHeight(250px, 300px);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-grey-dark;
+    border-radius: space("6");
+    z-index: 2;
+    display: none;
+    @include boxShadow();
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__btn--close {
+        align-self: flex-end;
+    }
+
+    &__title {
+        margin: space("12") 0;
+    }
+
+    &__input {
+        margin: space("6") 0;
+        padding: space("6");
+
+        &__submit {
+            margin: space("12") 0;
+            padding: space("6");
+            @include inputStyle();
+            color: $color-white;
+            background-color: $color-main;
+            cursor: pointer;
+        }
+    }
+}

@@ -14,3 +14,15 @@ svg {
     width: 30px;
     height: 30px;
 }
+
+.x {
+    width: 25px;
+    height: 25px;
+    fill: $color-grey-light;
+    stroke: $color-grey-light;
+
+    &:hover {
+        fill: $color-white;
+        stroke: $color-grey-light;
+    }
+}

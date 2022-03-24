@@ -96,7 +96,7 @@ $font-lock-max: 1000px !default;
 @mixin landingSectionLayout($max-width) {
   max-width: $max-width;
   padding: space("12");
-  margin: 10vh auto;
+  margin: 5vh auto;
 }
 
 
@@ -105,4 +105,13 @@ $font-lock-max: 1000px !default;
 @mixin widthAndHeight($width, $height) {
   width: $width;
   height: $height;
+}
+
+
+// Mixin box shadow
+
+@mixin boxShadow(){
+  box-shadow:
+    2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041),
+    20px 20px 92px rgba(0, 0, 0, 0.07);
 }
