@@ -10,7 +10,7 @@ h2[class$="title"] {
 img[class$="__img"] {
     display: none;
 
-    @include deskopt-dimensions {
+    @include tablet-landscape-dimensions {
         display: block;
     }
 }
