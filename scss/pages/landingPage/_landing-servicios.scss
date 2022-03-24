@@ -4,6 +4,10 @@
     &__list {
         list-style: none;
         margin-left: space("12");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
 
         &__servicio {
             display: flex;

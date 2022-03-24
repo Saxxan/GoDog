@@ -4,6 +4,10 @@
     &__list {
         list-style: none;
 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         &__perk {
             display: flex;
             justify-content: space-evenly;
