@@ -3,11 +3,18 @@
 // *************************
 
 const btnLogIn = document.querySelector('.login');
+const modal = document.querySelector('.modal');
+const btnLogInClose = document.querySelector('.modal__btn--close');
 
 btnLogIn.addEventListener('click', function(){
-    var modal = document.querySelector('.modal');
-    const body = document.querySelector('body');
+        modal.style.display = 'flex';
+});
 
-    modal.style.display = 'block';
-    // body.style.filter = 'blur(6px)';
-})
+
+// *************************
+// Función cerrar modal login
+// *************************
+
+btnLogInClose.addEventListener('click', function(){
+        modal.style.display = 'none';
+});

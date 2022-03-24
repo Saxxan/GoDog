@@ -7,7 +7,7 @@
     font-weight: 700;
     cursor: pointer;
     border-radius: space("24");
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .register {
@@ -24,9 +24,8 @@
 
 .register, .register--big {
     background-color: $color-sec;
-    border: 2px solid $color-sec;
+    border: 2px solid $color-white;
     overflow: hidden;
-    transition: all .5s ease-out;
 
     &__text--hover {
         position: absolute;
@@ -58,5 +57,13 @@
     &:hover {
         background: $color-white;
         color: $color-main;
+    }
+
+    &__close {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        padding: space("6") space("12");
+        margin: 0 space("18");
     }
 }

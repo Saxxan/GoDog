@@ -34,8 +34,38 @@ div[class$=__container] {
   border-radius: 6px;
   z-index: 2;
   display: none;
-  -webkit-box-shadow: 0px 0px 5px 3px #3a3939;
-          box-shadow: 0px 0px 5px 3px #3a3939;
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal__btn--close {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.modal__title {
+  margin: 12px 0;
+}
+.modal__input {
+  margin: 6px 0;
+  padding: 6px;
+}
+.modal__input__submit {
+  margin: 12px 0;
+  padding: 6px;
+  border: 2px solid #11978c;
+  border-radius: 24px;
+  color: #FFFFFF;
+  background-color: #11978c;
+  cursor: pointer;
 }
 
 .btn {
@@ -44,8 +74,8 @@ div[class$=__container] {
   font-weight: 700;
   cursor: pointer;
   border-radius: 24px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .btn {
   font-size: 13px;
@@ -98,10 +128,8 @@ div[class$=__container] {
 
 .register, .register--big {
   background-color: #a180e0;
-  border: 2px solid #a180e0;
+  border: 2px solid #FFFFFF;
   overflow: hidden;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
 }
 .register__text--hover, .register--big__text--hover {
   position: absolute;
@@ -127,6 +155,13 @@ div[class$=__container] {
 .login:hover {
   background: #FFFFFF;
   color: #11978c;
+}
+.login__close {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 6px 12px;
+  margin: 0 18px;
 }
 
 input[class^=form__input], [class^=form__input__tag] {
@@ -213,16 +248,24 @@ input[class^=form__input], [class^=form__input__tag] {
   display: none;
 }
 .form__input__servicios input[id^=checkbox--]:nth-of-type(1):checked ~ label:nth-of-type(1) {
-  border: 1px solid #11978c;
+  background-color: #474747;
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
 }
 .form__input__servicios input[id^=checkbox--]:nth-of-type(2):checked ~ label:nth-of-type(2) {
-  border: 1px solid #11978c;
+  background-color: #474747;
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
 }
 .form__input__servicios input[id^=checkbox--]:nth-of-type(3):checked ~ label:nth-of-type(3) {
-  border: 1px solid #11978c;
+  background-color: #474747;
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
 }
 .form__input__servicios input[id^=checkbox--]:nth-of-type(4):checked ~ label:nth-of-type(4) {
-  border: 1px solid #11978c;
+  background-color: #474747;
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
 }
 .form__input__submit {
   padding: 12px;
@@ -290,6 +333,17 @@ svg {
   fill: #11978c;
   width: 30px;
   height: 30px;
+}
+
+.x {
+  width: 25px;
+  height: 25px;
+  fill: #7E7E7E;
+  stroke: #7E7E7E;
+}
+.x:hover {
+  fill: #FFFFFF;
+  stroke: #7E7E7E;
 }
 
 h1 {

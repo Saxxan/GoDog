@@ -73,7 +73,8 @@ input[class^="form__input"], [class^="form__input__tag"]{
             @for $i from 1 through 4 {
                 &:nth-of-type(#{$i}):checked {
                     & ~ label:nth-of-type(#{$i}) {
-                        border: 1px solid $color-main;
+                        background-color: $color-grey-dark;
+                        @include boxShadow();
                     }
                 }
             }
