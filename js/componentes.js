@@ -1,40 +1,30 @@
 // -------- ARCHIVO JS RECOPILATORIO FUNCIONES
 
+const usersURL = './users.json';
+
 // ****************************
-// Function get users filtered
+// Function get users
 // ****************************
 
 function getUsers(){
     
-    // axios.get('./users.json')
-    //     .then(function(response) {
-    //         response.data.forEach(function(user) {
-    //             console.log(user);
-    //         });
-    //     });
+    axios.get(usersURL)
+        .then(function(response) {
+            let users = response.data;
+            console.log(users);
+        });
 
     // fetch('./users.json')
-    //     .then(function(){
-    //         let users = response.data.results;
+    //     .then(function(response) { return response.json(); })
+    //     .then(function(users){
     //         console.log(users);
     //     })
-
-    fetch('users.json')
-        .then(res => res.json())
-        .then(data => {
-            data.results.forEach(user => {
-                console.log(user);
-            });
-        });
 }
-
 
 
 // **********************************
 // Get input values from form
 // **********************************
-
-// import * as users from './users.json';
 
 var cp = '';
 var from = '';
@@ -63,7 +53,7 @@ btnSubmit.addEventListener('click', function(){
 
     debugger;
 
-    getUsers();
+    // getUsers();
 
     debugger;
 })
@@ -74,34 +64,34 @@ btnSubmit.addEventListener('click', function(){
 // Function print users card
 // ******************************
 
-// const cards = document.querySelector('.cards__container');
+const cards = document.querySelector('.cards__container');
 
-// function printCard (i){
-//     axios.get('./users.json')
-//         .then(function(response) {
-//             var card = response.data.results[i];
-//             console.log(card);
-//             debugger;
-//             cards.innerHTML = `
-//             <article class="card">
-//                 <main class="card__body">
-//                     <img src="" alt="" class="card__body__photo">
-//                     <div class="card__body__text">
-//                         <h6 class="card__body__text__title"></h6>
-//                         <p class="card__body__text__date"></p>
-//                         <p class="card__body__text__cp"></p>
-//                         <p class="card__body__text__info"></p>
-//                     </div>
-//                     <aside class="card__body__marks">
-//                         <svg class="star--icon"></svg>
-//                         <p class="card__body__marks__mark"></p>
-//                     </aside>
-//                 </main>
-//                 <footer class="card__footer">
-//                     <p class="card__footer__price"></p>
-//                     <button class="card__footer__contact"></button>
-//                 </footer>
-//             </article>
-//             `
-//         })
-// }
+function printCard (){
+    axios.get('./users.json')
+        .then(function(response) {
+            let users = response.data;
+            console.log(users);
+            debugger;
+            cards.innerHTML = `
+            <article class="card">
+                <main class="card__body">
+                    <img src="" alt="" class="card__body__photo">
+                    <div class="card__body__text">
+                        <h6 class="card__body__text__title"></h6>
+                        <p class="card__body__text__date"></p>
+                        <p class="card__body__text__cp"></p>
+                        <p class="card__body__text__info"></p>
+                    </div>
+                    <aside class="card__body__marks">
+                        <svg class="star--icon"></svg>
+                        <p class="card__body__marks__mark"></p>
+                    </aside>
+                </main>
+                <footer class="card__footer">
+                    <p class="card__footer__price"></p>
+                    <button class="card__footer__contact"></button>
+                </footer>
+            </article>
+            `
+        })
+}
