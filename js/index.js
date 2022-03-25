@@ -53,7 +53,7 @@ btnSubmit.addEventListener('click', function(){
 
     debugger;
 
-    // getUsers();
+    getUsers();
 
     debugger;
 })
