@@ -4,6 +4,7 @@
   "description": "GoDog website plays a role in the contacts between pet owners and animal keepers. This website is a project of the ESAT Innovation School",
   "main": "index.js",
   "scripts": {
+    "pug": "pug -w ./pug",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +19,8 @@
   "homepage": "https://github.com/Saxxan/GoDog#readme",
   "dependencies": {
     "axios": "^0.26.1",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6"
   },
   "devDependencies": {}
 }
