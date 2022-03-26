@@ -3,8 +3,8 @@
 const usersURL = '/js/users.json';
 const cards = document.querySelector('.cards__container');
 var cp = '';
-var from = '';
-var to = '';
+var from = new Date();
+var to = new Date();
 var services = '';
 var servicio = '';
 var btnSubmit = document.querySelector('.form__input__submit');
@@ -15,7 +15,7 @@ let users = [];
 // ******************************
 
 function printCard(user){
-    cards.innerHTML = `
+    cards.innerHTML += `
     <article class="card">
         <main class="card__body">
             <img src="" alt="" class="card__body__photo">
@@ -38,6 +38,16 @@ function printCard(user){
     `
 }
 
+// *********************************
+// Function convertion to date type
+// *********************************
+
+// function convertToDate (date) {
+//     var dateType = new Date(date);
+//     return dateType.toDateString();
+// };
+
+
 // ****************************
 // Function get users
 // ****************************
@@ -47,16 +57,24 @@ function getUsers(){
     axios.get(usersURL)
         .then(function(response) {
             users = response.data;
+            cards.innerHTML='';
             
             for(var i=0; i<users.length; i++) {
-                const cpTrue = cp == '' || users[i].cp == cp;
-                const fromTrue = from == '' || users[i].from == from;
-                const toTrue = to == '' || users[i].to == to;
-                const servicioTrue = true;
-        
-                console.log(cpTrue);
-                console.log(fromTrue);
-                console.log(toTrue);
+
+                let userFrom = Date.parse(users[i].from);
+                let userTo = Date.parse(users[i].to);
+                let fromTrue;
+                let toTrue;
+
+                console.log(userFrom);
+                console.log(userTo);
+
+                let cpTrue = cp == '' || users[i].cp == cp;
+                if(userFrom < userTo) {
+                    fromTrue = (from == '') || ((from >= userFrom) && (from < userTo));
+                    toTrue = (to == '') || ((to <= userTo) && (to > userFrom));
+                }
+                let servicioTrue = true;
         
                 if(cpTrue && fromTrue && toTrue && servicioTrue){
                     printCard(users[i]);
@@ -72,8 +90,8 @@ function getUsers(){
 
 btnSubmit.addEventListener('click', function(){
     cp = document.getElementById('cp').value;
-    from = document.getElementById('from').value;
-    to = document.getElementById('to').value;
+    from = Date.parse(document.getElementById('from').value);
+    to = Date.parse(document.getElementById('to').value);
     services = document.querySelectorAll('.servicio');
 
     for (var i = 0; i<services.length; i++){
