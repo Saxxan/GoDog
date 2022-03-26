@@ -34,24 +34,24 @@
     </nav>
 
     <!-- Landing search filtered form -->
-    <form class="landing__search" action="">
-        <h2 class="landing__search__title">Busca a tu cuidador ya!</h2>
-        <label class="landing__search__input--text form__input" for="">
+    <form class="search" action="">
+        <h2 class="search__title">Busca a tu cuidador ya!</h2>
+        <label class="search__input--text form__input" for="">
             <span class="form__input__tag">Dónde</span>
             <input class="form__input__box" type="text" id="cp" name="cp" placeholder="Código postal">
         </label>
-        <label class="landing__search__input--text form__input" for="">
+        <label class="search__input--text form__input" for="">
             <span class="form__input__tag">Cuándo</span>
-            <input class="form__input__box" type="date" id="cp" name="cp">
-            <input class="form__input__box" type="date" id="cp" name="cp">
+            <input class="form__input__box" type="date" id="from" name="cp">
+            <input class="form__input__box" type="date" id="to" name="cp">
         </label>
 
         <p class="form__input__tag--servicio" for="">Qué servicio buscas</p>
-        <fieldset class="landing__search__servicios form__input__servicios">
-            <input type="checkbox" name="" id="checkbox--paseo">
-            <input type="checkbox" name="" id="checkbox--visita">
-            <input type="checkbox" name="" id="checkbox--day">
-            <input type="checkbox" name="" id="checkbox--night">
+        <fieldset class="search__servicios form__input__servicios">
+            <input class="servicio" type="checkbox" name="" id="checkbox--paseo">
+            <input class="servicio" type="checkbox" name="" id="checkbox--visita">
+            <input class="servicio" type="checkbox" name="" id="checkbox--day">
+            <input class="servicio" type="checkbox" name="" id="checkbox--night">
             <label for="checkbox--paseo" class="form__input__servicios__opt">
                 <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -81,11 +81,31 @@
                 <p>Alojamiento de mascota</p>
             </label>
         </fieldset>
-        <button class="form__input__submit" type="submit" value="Buscar">Buscar</button>
+        <button class="form__input__submit" value="Buscar" type="button">Buscar</button>
     </form>
 
     <!-- Cards section -->
-    <section class="cards__container"></section>
+    <section class="cards__container">
+        <!-- <article class="card">
+            <main class="card__body">
+                <img src="" alt="" class="card__body__photo">
+                <div class="card__body__text">
+                    <h6 class="card__body__text__title"></h6>
+                    <p class="card__body__text__date"></p>
+                    <p class="card__body__text__cp"></p>
+                    <p class="card__body__text__info"></p>
+                </div>
+                <aside class="card__body__marks">
+                    <svg class="star--icon"></svg>
+                    <p class="card__body__marks__mark"></p>
+                </aside>
+            </main>
+            <footer class="card__footer">
+                <p class="card__footer__price"></p>
+                <button class="card__footer__contact"></button>
+            </footer>
+        </article> -->
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -105,5 +125,6 @@
         </ul>
     </footer>
 
-    <script src="js/componentes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
