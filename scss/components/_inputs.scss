@@ -82,11 +82,11 @@ input[class^="form__input"], [class^="form__input__tag"]{
     }
 
     &__submit {
-        padding: space("12"); 
-        margin: 10vh auto;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%); 
+        margin: 10px auto;
+        display: grid;
+        place-content: center;
+        
+        padding: space("12");  
         cursor: pointer;
         border-radius: space("36");
         border: 2px solid $color-main;

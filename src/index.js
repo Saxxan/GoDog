@@ -111,7 +111,6 @@ btnSubmit.addEventListener('click', function(){
     for (var i = 0; i<services.length; i++){
         if(services[i].checked) {
             servicio = services[i].id;
-            
         }
     }
 
