@@ -16,8 +16,10 @@
 
 .register--big {
     @include width(170px, 400px);
-    display: grid;
-    place-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10vh;
 }
 
 .register, .register--big {
@@ -62,6 +64,6 @@
         background-color: transparent;
         border: none;
         padding: space("6") space("12");
-        margin: 0 space("18");
+        margin: space("18");
     }
 }
