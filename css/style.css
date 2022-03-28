@@ -106,11 +106,9 @@ div[class$=__container] {
 }
 
 .register--big {
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  margin: 10vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
 }
 .register--big {
   width: 170px;
@@ -268,12 +266,11 @@ input[class^=form__input], [class^=form__input__tag] {
           box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
 }
 .form__input__submit {
+  margin: 10px auto;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
   padding: 12px;
-  margin: 10vh auto;
-  position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   cursor: pointer;
   border-radius: 36px;
   border: 2px solid #11978c;

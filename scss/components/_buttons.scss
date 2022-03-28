@@ -16,10 +16,8 @@
 
 .register--big {
     @include width(170px, 400px);
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 10vh;
+    display: grid;
+    place-content: center;
 }
 
 .register, .register--big {
