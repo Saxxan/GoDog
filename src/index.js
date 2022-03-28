@@ -85,10 +85,13 @@ function getUsers(){
 
                 let cpTrue = cp == '' || users[i].cp == cp;
                 if(userFrom < userTo) {
-                    fromTrue = (from == '') || ((from >= userFrom) && (from < userTo));
-                    toTrue = (to == '') || ((to <= userTo) && (to > userFrom));
+                    fromTrue = (from !== from) || ((from >= userFrom) && (from < userTo));
+                    toTrue = (to !== to) || ((to <= userTo) && (to > userFrom));
                 }
                 let servicioTrue = true;
+
+                console.log(fromTrue);
+                console.log(toTrue);
         
                 if(cpTrue && fromTrue && toTrue && servicioTrue){
                     printCard(users[i]);
@@ -103,10 +106,11 @@ function getUsers(){
 // **********************************
 
 btnSubmit.addEventListener('click', function(){
+
     cp = document.getElementById('cp').value;
     from = Date.parse(document.getElementById('from').value);
     to = Date.parse(document.getElementById('to').value);
-    services = document.querySelectorAll('.servicio');
+    services = document.querySelector('.servicio');
 
     for (var i = 0; i<services.length; i++){
         if(services[i].checked) {
