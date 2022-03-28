@@ -1,6 +1,14 @@
 .landing__branding {
     @include landingSectionLayout(1000px);
 
+    &__title {
+
+        @include tablet-landscape-dimensions {
+            text-align: right;
+            padding-right: space("60");
+        }
+    }
+
     &__list {
         list-style: none;
 

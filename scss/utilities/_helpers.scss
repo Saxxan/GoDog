@@ -1,11 +1,5 @@
 // ------------$HELPERS
 
-// titles padding helper
-h2[class$="title"] {
-    padding: 0 space("12");
-    margin: space("18") space("30");
-}
-
 // landing section img
 img[class$="__img"] {
     display: none;

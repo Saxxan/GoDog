@@ -6,6 +6,7 @@ h1 {
 
 h2 {
     @include font-size(25px, 35px);
+    padding: 0 space("12");
 }
 
 h3 {

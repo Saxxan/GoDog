@@ -1,8 +1,3 @@
-h2[class$=title] {
-  padding: 0 12px;
-  margin: 18px 30px;
-}
-
 img[class$=__img] {
   display: none;
 }
@@ -23,8 +18,8 @@ div[class$=__container] {
 }
 
 .modal {
-  width: 250px;
-  height: 300px;
+  width: 350px;
+  height: 400px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -43,9 +38,6 @@ div[class$=__container] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .modal__btn--close {
   -ms-flex-item-align: end;
@@ -57,12 +49,19 @@ div[class$=__container] {
 .modal__input {
   margin: 6px 0;
   padding: 6px;
+  width: 200px;
+  height: 40px;
+  border-radius: 18px;
 }
 .modal__input__submit {
   margin: 12px 0;
   padding: 6px;
+  width: 200px;
+  height: 50px;
   border: 2px solid #11978c;
   border-radius: 24px;
+  font-weight: 700;
+  font-size: 20px;
   color: #FFFFFF;
   background-color: #11978c;
   cursor: pointer;
@@ -106,9 +105,11 @@ div[class$=__container] {
 }
 
 .register--big {
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 10vh;
 }
 .register--big {
   width: 170px;
@@ -159,7 +160,7 @@ div[class$=__container] {
   background-color: transparent;
   border: none;
   padding: 6px 12px;
-  margin: 0 18px;
+  margin: 18px;
 }
 
 input[class^=form__input], [class^=form__input__tag] {
@@ -357,6 +358,9 @@ h1 {
   }
 }
 
+h2 {
+  padding: 0 12px;
+}
 h2 {
   font-size: 25px;
 }
@@ -584,13 +588,13 @@ html, body {
 .search {
   max-width: 900px;
   padding: 12px;
-  margin: 5vh auto;
+  margin: 0 auto 10vh auto;
 }
 
 .landing__servicios {
   max-width: 1000px;
   padding: 12px;
-  margin: 5vh auto;
+  margin: 0 auto 10vh auto;
 }
 .landing__servicios__list {
   list-style: none;
@@ -629,7 +633,13 @@ html, body {
 .landing__branding {
   max-width: 1000px;
   padding: 12px;
-  margin: 5vh auto;
+  margin: 0 auto 10vh auto;
+}
+@media screen and (min-width: 800px) {
+  .landing__branding__title {
+    text-align: right;
+    padding-right: 60px;
+  }
 }
 .landing__branding__list {
   list-style: none;
