@@ -1,3 +1,4 @@
+console.log("Hello World!");
 // -------- ARCHIVO JS RECOPILATORIO FUNCIONES
 
 // *************************
