@@ -185,7 +185,12 @@ div[class$=__container] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 6px 0;
+  margin: 0 auto 12px auto;
+}
+@media screen and (min-width: 500px) {
+  .card {
+    padding: 24px;
+  }
 }
 .card__header {
   display: -webkit-box;
@@ -257,14 +262,26 @@ div[class$=__container] {
           align-items: center;
 }
 .card__footer__contact {
-  color: #FFFFFF;
+  background-color: #8cd9d2;
+  border: 2px solid #FFFFFF;
+  margin: 0 6px;
+}
+.card__footer__contact {
+  width: 95px;
+}
+@media (min-width: 400px) {
+  .card__footer__contact {
+    width: calc( 95px + 25 * (100vw - 400px) / 600 );
+  }
+}
+@media (min-width: 1000px) {
+  .card__footer__contact {
+    width: 120px;
+  }
+}
+.card__footer__contact:hover {
   background-color: #11978c;
   border: 2px solid #11978c;
-  border-radius: 24px;
-  padding: 6px;
-  font-weight: 700;
-  margin: 0 6px;
-  cursor: pointer;
 }
 
 input[class^=form__input], [class^=form__input__tag] {

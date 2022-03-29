@@ -10,7 +10,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: space("6") 0;
+    margin: 0 auto space("12") auto;
+
+    @include tablet-portrait-dimensions {
+        padding: space("24");
+    }
 
     &__header {
         display: flex;
@@ -64,14 +68,15 @@
         align-items: center;
 
         &__contact {
-            color: $color-white;
-            background-color: $color-main;
-            border: 2px solid $color-main;
-            border-radius: space("24");
-            padding: space("6");
-            font-weight: 700;
+            background-color: $color-main-tone-2;
+            border: 2px solid $color-white;
             margin: 0 space("6");
-            cursor: pointer;
+            @include width(95px, 120px);
+
+            &:hover {
+                background-color: $color-main;
+                border: 2px solid $color-main;
+            }
         }
     }
 }
