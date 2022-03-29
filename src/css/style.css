@@ -163,6 +163,110 @@ div[class$=__container] {
   margin: 18px;
 }
 
+.cards__container {
+  max-width: 900px;
+  padding: 12px;
+  margin: 0 auto 10vh auto;
+}
+
+.card {
+  padding: 12px;
+  background-color: #474747;
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 6px 0;
+}
+.card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__header__photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card__header__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 12px;
+}
+.card__header__marks {
+  margin: auto 0 auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__header__marks__mark {
+  margin: 0 6px;
+}
+.card__body__text {
+  display: inline-block;
+  margin-bottom: 12px;
+  max-width: 90%;
+}
+.card__body__text__cp {
+  margin-bottom: 12px;
+}
+.card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__footer__contact {
+  color: #FFFFFF;
+  background-color: #11978c;
+  border: 2px solid #11978c;
+  border-radius: 24px;
+  padding: 6px;
+  font-weight: 700;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
 input[class^=form__input], [class^=form__input__tag] {
   border: 2px solid #11978c;
   border-radius: 24px;
@@ -342,6 +446,13 @@ svg {
 .x:hover {
   fill: #FFFFFF;
   stroke: #7E7E7E;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  fill: #a180e0;
+  stroke: #a180e0;
 }
 
 h1 {

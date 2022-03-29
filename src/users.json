@@ -5,7 +5,10 @@
         "to": "2022-03-27",
         "cp": "46020",
         "price": "10",
-        "mark": "9"
+        "mark": "9",
+        "service": ["checkbox--paseo", "checkbox--visita", "checkbox--day", "checkbox--night"],
+        "img": "/src/media/paseadorMaria.webp",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam voluptatem nemo doloribus molestiae corrupti, iure, repellat, officiis minus quaerat ipsa ullam inventore accusamus nobis et optio quos placeat nihil."
     },
     {
         "name": "Alejandro Sánchez",
@@ -13,7 +16,10 @@
         "to": "2022-04-30",
         "cp": "46020",
         "price": "8",
-        "mark": "9"
+        "mark": "9",
+        "service": ["checkbox--paseo", "checkbox--visita"],
+        "img": "/src/media/paseadorAlejandro.webp",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam voluptatem nemo doloribus molestiae corrupti, iure, repellat, officiis minus quaerat ipsa ullam inventore accusamus nobis et optio quos placeat nihil."
     },
     {
         "name": "Manuel Gutiérrez",
@@ -21,7 +27,10 @@
         "to": "2022-03-31",
         "cp": "46021",
         "price": "7",
-        "mark": "7"
+        "mark": "7",
+        "service": ["checkbox--day", "checkbox--night"],
+        "img": "/src/media/paseadorMaria.webp",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam voluptatem nemo doloribus molestiae corrupti, iure, repellat, officiis minus quaerat ipsa ullam inventore accusamus nobis et optio quos placeat nihil."
     },
     {
         "name": "Sonia Pérez",
@@ -29,7 +38,10 @@
         "to": "2022-05-20",
         "cp": "46021",
         "price": "9",
-        "mark": "9"
+        "mark": "9",
+        "service": ["checkbox--paseo", "checkbox--visita", "checkbox--day", "checkbox--night"],
+        "img": "/src/media/paseadorMaria.webp",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam voluptatem nemo doloribus molestiae corrupti, iure, repellat, officiis minus quaerat ipsa ullam inventore accusamus nobis et optio quos placeat nihil."
     },
     {
         "name": "Carlos Puyol",
@@ -37,7 +49,10 @@
         "to": "2022-05-05",
         "cp": "46020",
         "price": "12",
-        "mark": "9"
+        "mark": "9",
+        "service": ["checkbox--paseo", "checkbox--visita", "checkbox--day", "checkbox--night"],
+        "img": "/src/media/paseadorMaria.webp",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam voluptatem nemo doloribus molestiae corrupti, iure, repellat, officiis minus quaerat ipsa ullam inventore accusamus nobis et optio quos placeat nihil."
     },
     {
         "name": "Cristina Sanz",
@@ -45,6 +60,9 @@
         "to": "2022-04-14",
         "cp": "46020",
         "price": "12",
-        "mark": "9"
+        "mark": "9",
+        "service": ["checkbox--paseo", "checkbox--visita", "checkbox--day", "checkbox--night"],
+        "img": "/src/media/paseadorMaria.webp",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam voluptatem nemo doloribus molestiae corrupti, iure, repellat, officiis minus quaerat ipsa ullam inventore accusamus nobis et optio quos placeat nihil."
     }
 ]
