@@ -93,7 +93,7 @@ $font-lock-max: 1000px !default;
 
 // Mixin landing sections layout and dimensions
 
-@mixin landingSectionLayout($max-width) {
+@mixin sectionLayout($max-width) {
   max-width: $max-width;
   padding: space("12");
   margin: 0 auto 10vh auto;

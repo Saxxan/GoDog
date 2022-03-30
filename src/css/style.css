@@ -163,7 +163,7 @@ div[class$=__container] {
   margin: 18px;
 }
 
-.cards__container {
+.cards {
   max-width: 900px;
   padding: 12px;
   margin: 0 auto 10vh auto;
@@ -796,6 +796,27 @@ html, body {
 .landing__branding__list__perk__info {
   width: 70%;
   padding: 6px;
+}
+
+.dashboard {
+  max-width: 900px;
+  padding: 12px;
+  margin: 0 auto 10vh auto;
+}
+.dashboard__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.dashboard__container__section {
+  width: 400px;
+  height: 400px;
+  padding: 6px;
+  margin: 6px;
+  border: 1px solid white;
+  border-radius: 6px;
 }
 
 .footer {

@@ -1,5 +1,5 @@
 .landing__servicios {
-    @include landingSectionLayout (1000px);
+    @include sectionLayout (1000px);
 
     &__list {
         list-style: none;

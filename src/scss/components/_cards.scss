@@ -1,5 +1,5 @@
-.cards__container {
-    @include landingSectionLayout(900px);
+.cards {
+    @include sectionLayout(900px);
 }
 
 .card {
