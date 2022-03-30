@@ -1,0 +1,82 @@
+.cards__container {
+    @include landingSectionLayout(900px);
+}
+
+.card {
+    padding: space("12");
+    background-color: $color-grey-dark;
+    @include boxShadow();
+    border-radius: space("6");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto space("12") auto;
+
+    @include tablet-portrait-dimensions {
+        padding: space("24");
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__photo {
+            @include widthAndHeight(60px, 60px);
+            border-radius: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &__title {
+            width: fit-content;
+            height: fit-content;
+            margin: 0;
+            padding: space("12");
+        }
+
+        &__marks {
+            margin: auto 0 auto auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            &__mark {
+                margin: 0 space("6");
+            }
+        }
+    }
+
+    &__body {
+
+        &__text {
+            display: inline-block;
+            margin-bottom: space("12");
+            max-width: 90%;
+
+            &__cp {
+                margin-bottom: space("12");
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        &__contact {
+            background-color: $color-main-tone-2;
+            border: 2px solid $color-white;
+            margin: 0 space("6");
+            @include width(95px, 120px);
+
+            &:hover {
+                background-color: $color-main;
+                border: 2px solid $color-main;
+            }
+        }
+    }
+}

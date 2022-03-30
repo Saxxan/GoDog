@@ -1,23 +1,19 @@
 svg {
     stroke: $color-main;
-    width: 50px;
-    height: 50px;
+    @include widthAndHeight(50px, 50px);
 
     @include tablet-landscape-dimensions {
-        width: 80px;
-        height: 80px;
+        @include widthAndHeight(80px, 80px);
     }
 }
 
 .tick {
     fill: $color-main;
-    width: 30px;
-    height: 30px;
+    @include widthAndHeight(30px, 30px);
 }
 
 .x {
-    width: 25px;
-    height: 25px;
+    @include widthAndHeight(25px, 25px);
     fill: $color-grey-light;
     stroke: $color-grey-light;
 
@@ -25,4 +21,10 @@ svg {
         fill: $color-white;
         stroke: $color-grey-light;
     }
+}
+
+.star {
+    @include widthAndHeight(20px, 20px);
+    fill: $color-sec;
+    stroke: $color-sec;
 }
