@@ -1,16 +1,24 @@
 .dashboard {
-    @include sectionLayout(900px);
+    @include sectionLayout(1200px);
+    border: 1px solid white;
 
     &__container {
         display: flex;
         flex-wrap: wrap;
 
-        &__section{
-            @include widthAndHeight(400px, 400px);
+        &__section {
             padding: space("6");
             margin: space("6");
             border: 1px solid white;
             border-radius: space("6");
         }
     }
+}
+
+.wallet, .reports, .bookings {
+    flex-basis: 32%;
+}
+
+.messages, .profiles {
+    flex-basis: 49%;
 }

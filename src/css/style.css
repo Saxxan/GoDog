@@ -504,6 +504,10 @@ h2 {
 }
 
 h3 {
+  margin: 0;
+  padding: 0 12px;
+}
+h3 {
   font-size: 23px;
 }
 @media (min-width: 400px) {
@@ -799,9 +803,10 @@ html, body {
 }
 
 .dashboard {
-  max-width: 900px;
+  max-width: 1200px;
   padding: 12px;
   margin: 0 auto 10vh auto;
+  border: 1px solid white;
 }
 .dashboard__container {
   display: -webkit-box;
@@ -811,12 +816,20 @@ html, body {
       flex-wrap: wrap;
 }
 .dashboard__container__section {
-  width: 400px;
-  height: 400px;
   padding: 6px;
   margin: 6px;
   border: 1px solid white;
   border-radius: 6px;
+}
+
+.wallet, .reports, .bookings {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+.messages, .profiles {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
 }
 
 .footer {

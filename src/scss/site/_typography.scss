@@ -11,6 +11,8 @@ h2 {
 
 h3 {
     @include font-size(23px, 32px);
+    margin: 0;
+    padding: 0 space("12");
 }
 
 h4 {
