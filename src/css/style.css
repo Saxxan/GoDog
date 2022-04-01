@@ -504,20 +504,16 @@ h2 {
 }
 
 h3 {
-  margin: 0;
-  padding: 0 12px;
-}
-h3 {
-  font-size: 23px;
+  font-size: 21px;
 }
 @media (min-width: 400px) {
   h3 {
-    font-size: calc( 23px + 9 * (100vw - 400px) / 600 );
+    font-size: calc( 21px + 9 * (100vw - 400px) / 600 );
   }
 }
 @media (min-width: 1000px) {
   h3 {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 
@@ -564,7 +560,7 @@ h6 {
 }
 
 p, label {
-  margin: 6px;
+  margin: 6px 0;
 }
 p, label {
   font-size: 15px;
@@ -583,6 +579,7 @@ p, label {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Exo", sans-serif;
   font-weight: 700;
+  margin: 6px 0;
 }
 
 * {
@@ -724,7 +721,7 @@ html, body {
 }
 
 .landing__servicios {
-  max-width: 1000px;
+  max-width: 900px;
   padding: 12px;
   margin: 0 auto 10vh auto;
 }
@@ -763,7 +760,7 @@ html, body {
 }
 
 .landing__branding {
-  max-width: 1000px;
+  max-width: 900px;
   padding: 12px;
   margin: 0 auto 10vh auto;
 }
@@ -806,7 +803,6 @@ html, body {
   max-width: 1200px;
   padding: 12px;
   margin: 0 auto 10vh auto;
-  border: 1px solid white;
 }
 .dashboard__container {
   display: -webkit-box;
@@ -816,20 +812,137 @@ html, body {
       flex-wrap: wrap;
 }
 .dashboard__container__section {
-  padding: 6px;
-  margin: 6px;
+  padding: 18px;
   border: 1px solid white;
   border-radius: 6px;
+  margin: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .wallet, .reports, .bookings {
-  -ms-flex-preferred-size: 32%;
-      flex-basis: 32%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+@media screen and (min-width: 800px) {
+  .wallet, .reports, .bookings {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+  }
 }
 
 .messages, .profiles {
-  -ms-flex-preferred-size: 49%;
-      flex-basis: 49%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+@media screen and (min-width: 800px) {
+  .messages, .profiles {
+    -ms-flex-preferred-size: 48.6%;
+        flex-basis: 48.6%;
+  }
+}
+
+.wallet__money {
+  padding: 6px 0;
+}
+.wallet__action {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
+  color: #11978c;
+}
+
+.reports__report {
+  margin: 12px 0;
+  padding: 6px 0;
+}
+.reports__report__state {
+  display: inline;
+  border-radius: 6px;
+  padding: 6px;
+}
+.reports__report .inProgress {
+  background-color: #a180e0;
+}
+.reports__report__contractor {
+  display: inline;
+  padding: 6px;
+}
+.reports__report__period {
+  padding: 6px 0;
+}
+.reports__report__action {
+  display: -ms-grid;
+  display: grid;
+  text-align: right;
+  cursor: pointer;
+  color: #11978c;
+}
+.reports__more {
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 6px;
+  margin: 6px;
+  border-radius: 6px;
+  border-color: #11978c;
+  background-color: #11978c;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.bookings__booking {
+  margin: 12px 0;
+  padding: 6px 0;
+}
+.bookings__booking__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bookings__booking__header__contractor {
+  display: inline;
+}
+.bookings__booking__header__state {
+  display: inline;
+  border-radius: 6px;
+  padding: 6px;
+  background-color: #a180e0;
+}
+.bookings__booking__init {
+  color: #7E7E7E;
+}
+.bookings__more {
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 6px;
+  margin: 6px;
+  border-radius: 6px;
+  border-color: #11978c;
+  background-color: #11978c;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .footer {

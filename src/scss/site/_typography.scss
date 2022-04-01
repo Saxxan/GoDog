@@ -10,9 +10,7 @@ h2 {
 }
 
 h3 {
-    @include font-size(23px, 32px);
-    margin: 0;
-    padding: 0 space("12");
+    @include font-size(21px, 30px);
 }
 
 h4 {
@@ -29,11 +27,12 @@ h6 {
 
 p, label {
     @include font-size(15px, 20px);
-    margin: space("6");
+    margin: space("6") 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-title;
     font-weight: 700;
+    margin: space("6") 0;
 }
 

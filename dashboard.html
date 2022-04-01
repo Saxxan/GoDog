@@ -37,18 +37,50 @@
         <section class="dashboard__container">
             <article class="dashboard__container__section wallet">
                 <h3 class="dashboard__container__section__title">Cartera</h3>
+                <p class="wallet__money">Saldo: 50€</p>
+                <a href="" class="wallet__action">Gestionar saldo</a>
             </article>
             <article class="dashboard__container__section reports">
                 <h3 class="dashboard__container__section__title">Informes</h3>
+                <div class="reports__report">
+                    <p class="reports__report__state inProgress">En curso</p>
+                    <h6 class="reports__report__contractor">Juan Santos</h6>
+                    <p class="reports__report__period">Semana 04-04-2022/10-04-2022</p>
+                    <a href="" class="reports__report__action">Reportar paseos</a>
+                </div>
+                <div class="reports__report">
+                    <p class="reports__report__state inProgress">En curso</p>
+                    <h6 class="reports__report__contractor">Andrea Rubio</h6>
+                    <p class="reports__report__period">Semana 04-04-2022/10-04-2022</p>
+                    <a href="" class="reports__report__action">Reportar paseos</a>
+                </div>
+                <button class="reports__more">Ver todos los informes</button>
             </article>
             <article class="dashboard__container__section bookings">
                 <h3 class="dashboard__container__section__title">Contrataciones</h3>
+                <div class="bookings__booking">
+                    <header class="bookings__booking__header">
+                        <h6 class="bookings__booking__header__contractor">Juan Santos</h6>
+                        <p class="bookings__booking__header__state">Activa</p>
+                    </header>
+                    <p class="bookings__booking__init">Desde 20-03-2022</p>
+                    <p class="bookings__booking__service">Servicio: Paseo</p>
+                </div>
+                <div class="bookings__booking">
+                    <header class="bookings__booking__header">
+                        <h6 class="bookings__booking__header__contractor">Andrea Rubio</h6>
+                        <p class="bookings__booking__header__state">Activa</p>
+                    </header>
+                    <p class="bookings__booking__init">Desde 01-04-2022</p>
+                    <p class="bookings__booking__service">Servicio: Visita a domicilio</p>
+                </div>
+                <button class="bookings__more">Ver todas las contrataciones</button>
             </article>
             <article class="dashboard__container__section messages">
                 <h3 class="dashboard__container__section__title">Mensajes</h3>
             </article>
-            <article class="dashboard__container__section">
-                <h3 class="dashboard__container__section__title profiles">Perfiles</h3>
+            <article class="dashboard__container__section profiles">
+                <h3 class="dashboard__container__section__title">Perfiles</h3>
             </article>
         </section>
     </section>
