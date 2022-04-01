@@ -472,6 +472,10 @@ svg {
   stroke: #a180e0;
 }
 
+.dog {
+  stroke: #11978c;
+}
+
 h1 {
   font-size: 30px;
 }
@@ -828,23 +832,23 @@ html, body {
           justify-content: space-between;
 }
 
-.wallet, .reports, .bookings {
+.messages, .reports, .bookings {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
 @media screen and (min-width: 800px) {
-  .wallet, .reports, .bookings {
+  .messages, .reports, .bookings {
     -ms-flex-preferred-size: 32%;
         flex-basis: 32%;
   }
 }
 
-.messages, .profiles {
+.wallet, .profiles {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
 @media screen and (min-width: 800px) {
-  .messages, .profiles {
+  .wallet, .profiles {
     -ms-flex-preferred-size: 48.6%;
         flex-basis: 48.6%;
   }
@@ -868,8 +872,6 @@ html, body {
   display: inline;
   border-radius: 6px;
   padding: 6px;
-}
-.reports__report .inProgress {
   background-color: #a180e0;
 }
 .reports__report__contractor {
@@ -890,7 +892,6 @@ html, body {
   color: #FFFFFF;
   font-weight: 600;
   padding: 6px;
-  margin: 6px;
   border-radius: 6px;
   border-color: #11978c;
   background-color: #11978c;
@@ -933,7 +934,92 @@ html, body {
   color: #FFFFFF;
   font-weight: 600;
   padding: 6px;
+  border-radius: 6px;
+  border-color: #11978c;
+  background-color: #11978c;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.profiles__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.profiles__options__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #FFFFFF;
   margin: 6px;
+  padding: 6px;
+}
+
+.messages__message {
+  margin: 12px 0;
+  padding: 6px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.messages__message__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.messages__message__header__contractor {
+  display: inline;
+  margin-right: 12px;
+}
+.messages__message__header__alert {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  font-size: 19px;
+  border-radius: 12px;
+  background-color: #a180e0;
+}
+.messages__message__action {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #11978c;
+}
+.messages__more {
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 6px;
   border-radius: 6px;
   border-color: #11978c;
   background-color: #11978c;
