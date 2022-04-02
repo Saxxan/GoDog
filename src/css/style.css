@@ -602,6 +602,21 @@ html, body {
   background-color: #1B1A1A;
 }
 
+.cajacookies {
+  display: none;
+  background-color: #FFFFFF;
+  color: #1B1A1A;
+  padding: 12px;
+  position: fixed;
+  bottom: 0;
+}
+.cajacookies__button {
+  background-color: #1B1A1A;
+  color: #FFFFFF;
+  float: right;
+  cursor: pointer;
+}
+
 .topbar {
   height: 10vh;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-26%, #11978c), color-stop(132%, #8cd9d2));

@@ -1,0 +1,15 @@
+.cajacookies {
+    display: none;
+    background-color: $color-white;
+    color: $color-black;
+    padding: space("12");
+    position: fixed;
+    bottom: 0;
+
+    &__button {
+        background-color: $color-black;
+        color: $color-white;
+        float: right;
+        cursor: pointer;
+    }
+}
