@@ -28,3 +28,11 @@ svg {
     fill: $color-sec;
     stroke: $color-sec;
 }
+
+.dog, .user {
+    stroke: $color-main;
+
+    &:hover {
+        stroke: $color-main-tone-2;
+    }
+}

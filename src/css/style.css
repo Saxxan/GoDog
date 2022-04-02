@@ -163,7 +163,7 @@ div[class$=__container] {
   margin: 18px;
 }
 
-.cards__container {
+.cards {
   max-width: 900px;
   padding: 12px;
   margin: 0 auto 10vh auto;
@@ -472,6 +472,13 @@ svg {
   stroke: #a180e0;
 }
 
+.dog, .user {
+  stroke: #11978c;
+}
+.dog:hover, .user:hover {
+  stroke: #8cd9d2;
+}
+
 h1 {
   font-size: 30px;
 }
@@ -504,16 +511,16 @@ h2 {
 }
 
 h3 {
-  font-size: 23px;
+  font-size: 21px;
 }
 @media (min-width: 400px) {
   h3 {
-    font-size: calc( 23px + 9 * (100vw - 400px) / 600 );
+    font-size: calc( 21px + 9 * (100vw - 400px) / 600 );
   }
 }
 @media (min-width: 1000px) {
   h3 {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 
@@ -560,7 +567,7 @@ h6 {
 }
 
 p, label {
-  margin: 6px;
+  margin: 6px 0;
 }
 p, label {
   font-size: 15px;
@@ -579,6 +586,7 @@ p, label {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Exo", sans-serif;
   font-weight: 700;
+  margin: 6px 0;
 }
 
 * {
@@ -720,7 +728,7 @@ html, body {
 }
 
 .landing__servicios {
-  max-width: 1000px;
+  max-width: 900px;
   padding: 12px;
   margin: 0 auto 10vh auto;
 }
@@ -759,7 +767,7 @@ html, body {
 }
 
 .landing__branding {
-  max-width: 1000px;
+  max-width: 900px;
   padding: 12px;
   margin: 0 auto 10vh auto;
 }
@@ -796,6 +804,221 @@ html, body {
 .landing__branding__list__perk__info {
   width: 70%;
   padding: 6px;
+}
+
+.dashboard {
+  max-width: 1200px;
+  padding: 12px;
+  margin: 0 auto 10vh auto;
+}
+.dashboard__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.dashboard__container__section {
+  padding: 18px;
+  border-radius: 6px;
+  margin: 6px;
+  background-color: rgba(255, 255, 255, 0.068);
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.messages, .reports, .bookings {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+@media screen and (min-width: 800px) {
+  .messages, .reports, .bookings {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+  }
+}
+.messages__more, .reports__more, .bookings__more {
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 6px;
+  border-radius: 6px;
+  border-color: #11978c;
+  background-color: #11978c;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.wallet, .profiles {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+@media screen and (min-width: 800px) {
+  .wallet, .profiles {
+    -ms-flex-preferred-size: 48.6%;
+        flex-basis: 48.6%;
+  }
+}
+
+.wallet__money {
+  padding: 6px;
+}
+.wallet__money {
+  font-size: 15px;
+}
+@media (min-width: 400px) {
+  .wallet__money {
+    font-size: calc( 15px + 10 * (100vw - 400px) / 600 );
+  }
+}
+@media (min-width: 1000px) {
+  .wallet__money {
+    font-size: 25px;
+  }
+}
+.wallet__action {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
+  color: #8cd9d2;
+}
+
+.reports__report {
+  padding: 12px;
+}
+.reports__report__state {
+  display: inline;
+  border-radius: 6px;
+  padding: 6px;
+  background-color: #a180e0;
+}
+.reports__report__contractor {
+  display: inline;
+  padding: 6px;
+}
+.reports__report__period {
+  padding: 6px 0;
+}
+.reports__report__action {
+  display: -ms-grid;
+  display: grid;
+  text-align: right;
+  cursor: pointer;
+  color: #8cd9d2;
+}
+.reports__report:hover {
+  background-color: #474747;
+  border-radius: 6px;
+}
+
+.bookings__booking {
+  padding: 12px;
+}
+.bookings__booking__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bookings__booking__header__state {
+  border-radius: 6px;
+  padding: 6px;
+  background-color: #a180e0;
+}
+.bookings__booking__init {
+  color: #7E7E7E;
+}
+.bookings__booking:hover {
+  background-color: #474747;
+  border-radius: 6px;
+}
+
+.profiles__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.profiles__options__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 6px;
+  padding: 6px;
+}
+
+.messages__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12px;
+}
+.messages__message__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.messages__message__header__contractor {
+  margin-right: 12px;
+}
+.messages__message__header__alert {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  font-size: 19px;
+  border-radius: 12px;
+  background-color: #a180e0;
+}
+.messages__message__action {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #8cd9d2;
+}
+.messages__message:hover {
+  background-color: #474747;
+  border-radius: 6px;
 }
 
 .footer {
