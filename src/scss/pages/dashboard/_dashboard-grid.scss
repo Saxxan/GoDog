@@ -7,9 +7,10 @@
 
         &__section {
             padding: space("18");
-            border: 1px solid white;
             border-radius: space("6");
             margin: space("6");
+            background-color: rgba(255, 255, 255, 0.068);
+            @include boxShadow();
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -19,8 +20,21 @@
 
 .messages, .reports, .bookings {
     flex-basis: 100%;
+
     @include tablet-landscape-dimensions {
         flex-basis: 32%;
+    }
+
+    &__more {
+        color: $color-white;
+        font-weight: 600;
+        padding: space("6");
+        border-radius: space("6");
+        border-color: $color-main;
+        background-color: $color-main;
+        width: fit-content;
+        cursor: pointer;
+        align-self: flex-end;
     }
 }
 
@@ -33,20 +47,20 @@
 
 .wallet {
     &__money {
-        padding: space("6") 0;
+        padding: space("6");
+        @include font-size(15px, 25px);
     }
 
     &__action {
         align-self: flex-end;
         cursor: pointer;
-        color: $color-main;
+        color: $color-main-tone-2;
     }
 }
 
 .reports {
     &__report {
-        margin: space("12") 0;
-        padding: space("6") 0;
+        padding: space("12");
 
         &__state {
             display: inline;
@@ -68,39 +82,26 @@
             display: grid;
             text-align: right;
             cursor: pointer;
-            color: $color-main;
+            color: $color-main-tone-2;
         }
-    }
 
-    &__more {
-        color: $color-white;
-        font-weight: 600;
-        padding: space("6");
-        border-radius: space("6");
-        border-color: $color-main;
-        background-color: $color-main;
-        width: fit-content;
-        cursor: pointer;
-        align-self: flex-end;
+        &:hover {
+            background-color: $color-grey-dark;
+            border-radius: space("6");
+        }
     }
 }
 
 .bookings {
     &__booking {
-        margin: space("12") 0;
-        padding: space("6") 0;
+        padding: space("12");
 
         &__header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            &__contractor {
-                display: inline;
-            }
     
             &__state {
-                display: inline;
                 border-radius: space("6");
                 padding: space("6");
                 background-color: $color-sec;
@@ -110,18 +111,11 @@
         &__init {
             color: $color-grey-light;
         }
-    }
 
-    &__more {
-        color: $color-white;
-        font-weight: 600;
-        padding: space("6");
-        border-radius: space("6");
-        border-color: $color-main;
-        background-color: $color-main;
-        width: fit-content;
-        cursor: pointer;
-        align-self: flex-end;
+        &:hover {
+            background-color: $color-grey-dark;
+            border-radius: space("6");
+        }
     }
 }
 
@@ -146,18 +140,15 @@
 
 .messages {
     &__message {
-        margin: space("12") 0;
-        padding: space("6") 0;
         display: flex;
         flex-direction: column;
+        padding: space("12");
 
         &__header {
             display: flex;
-            flex-direction: row;
             align-items: center;
             
             &__contractor {
-                display: inline;
                 margin-right: space("12");
             }
     
@@ -172,19 +163,12 @@
 
         &__action {
             align-self: flex-end;
-            color: $color-main;
+            color: $color-main-tone-2;
         }
-    }
 
-    &__more {
-        color: $color-white;
-        font-weight: 600;
-        padding: space("6");
-        border-radius: space("6");
-        border-color: $color-main;
-        background-color: $color-main;
-        width: fit-content;
-        cursor: pointer;
-        align-self: flex-end;
+        &:hover {
+            background-color: $color-grey-dark;
+            border-radius: space("6");
+        }
     }
 }

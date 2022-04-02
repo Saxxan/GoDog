@@ -29,6 +29,10 @@ svg {
     stroke: $color-sec;
 }
 
-.dog {
+.dog, .user {
     stroke: $color-main;
+
+    &:hover {
+        stroke: $color-main-tone-2;
+    }
 }

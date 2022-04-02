@@ -472,8 +472,11 @@ svg {
   stroke: #a180e0;
 }
 
-.dog {
+.dog, .user {
   stroke: #11978c;
+}
+.dog:hover, .user:hover {
+  stroke: #8cd9d2;
 }
 
 h1 {
@@ -817,9 +820,11 @@ html, body {
 }
 .dashboard__container__section {
   padding: 18px;
-  border: 1px solid white;
   border-radius: 6px;
   margin: 6px;
+  background-color: rgba(255, 255, 255, 0.068);
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -842,6 +847,20 @@ html, body {
         flex-basis: 32%;
   }
 }
+.messages__more, .reports__more, .bookings__more {
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 6px;
+  border-radius: 6px;
+  border-color: #11978c;
+  background-color: #11978c;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
 
 .wallet, .profiles {
   -ms-flex-preferred-size: 100%;
@@ -855,18 +874,30 @@ html, body {
 }
 
 .wallet__money {
-  padding: 6px 0;
+  padding: 6px;
+}
+.wallet__money {
+  font-size: 15px;
+}
+@media (min-width: 400px) {
+  .wallet__money {
+    font-size: calc( 15px + 10 * (100vw - 400px) / 600 );
+  }
+}
+@media (min-width: 1000px) {
+  .wallet__money {
+    font-size: 25px;
+  }
 }
 .wallet__action {
   -ms-flex-item-align: end;
       align-self: flex-end;
   cursor: pointer;
-  color: #11978c;
+  color: #8cd9d2;
 }
 
 .reports__report {
-  margin: 12px 0;
-  padding: 6px 0;
+  padding: 12px;
 }
 .reports__report__state {
   display: inline;
@@ -886,26 +917,15 @@ html, body {
   display: grid;
   text-align: right;
   cursor: pointer;
-  color: #11978c;
+  color: #8cd9d2;
 }
-.reports__more {
-  color: #FFFFFF;
-  font-weight: 600;
-  padding: 6px;
+.reports__report:hover {
+  background-color: #474747;
   border-radius: 6px;
-  border-color: #11978c;
-  background-color: #11978c;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  cursor: pointer;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .bookings__booking {
-  margin: 12px 0;
-  padding: 6px 0;
+  padding: 12px;
 }
 .bookings__booking__header {
   display: -webkit-box;
@@ -918,11 +938,7 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
 }
-.bookings__booking__header__contractor {
-  display: inline;
-}
 .bookings__booking__header__state {
-  display: inline;
   border-radius: 6px;
   padding: 6px;
   background-color: #a180e0;
@@ -930,19 +946,9 @@ html, body {
 .bookings__booking__init {
   color: #7E7E7E;
 }
-.bookings__more {
-  color: #FFFFFF;
-  font-weight: 600;
-  padding: 6px;
+.bookings__booking:hover {
+  background-color: #474747;
   border-radius: 6px;
-  border-color: #11978c;
-  background-color: #11978c;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  cursor: pointer;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .profiles__options {
@@ -977,8 +983,6 @@ html, body {
 }
 
 .messages__message {
-  margin: 12px 0;
-  padding: 6px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -986,21 +990,17 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 12px;
 }
 .messages__message__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .messages__message__header__contractor {
-  display: inline;
   margin-right: 12px;
 }
 .messages__message__header__alert {
@@ -1014,21 +1014,11 @@ html, body {
 .messages__message__action {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  color: #11978c;
+  color: #8cd9d2;
 }
-.messages__more {
-  color: #FFFFFF;
-  font-weight: 600;
-  padding: 6px;
+.messages__message:hover {
+  background-color: #474747;
   border-radius: 6px;
-  border-color: #11978c;
-  background-color: #11978c;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  cursor: pointer;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 
 .footer {
