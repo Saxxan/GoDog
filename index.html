@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
-<body>
+<body onload="webCargada()">
 
     <!-- Log in window -->
     <div class="modal">
@@ -25,6 +25,14 @@
         <input type="text" class="modal__input" placeholder="Email">
         <input type="text" class="modal__input" placeholder="Contraseña">
         <button class="modal__input__submit" onclick="window.location.pathname='/dashboard.html'">Iniciar sesión</button>
+    </div>
+
+    <!-- Modal aceptar cookies -->
+    <div class="cajacookies">
+        <p>
+            Éste sitio web usa cookies, si permanece aquí acepta su uso. Puede leer más sobre el uso de cookies en nuestra <a href="politica.html">política de privacidad</a>.
+        </p>
+        <button onclick="aceptarCookies()" class="cajacookies__button">Aceptar y cerrar éste mensaje</button>
     </div>
 
     <!-- Topbar -->
@@ -264,5 +272,6 @@
 
     <script src="/node_modules/axios/dist/axios.min.js"></script>
     <script src="/src/logInModal.js"></script>
-    <script src="src/index.js"></script>
+    <script src="/src/cookies.js"></script>
+    <script src="/src/index.js"></script>
 </body>
