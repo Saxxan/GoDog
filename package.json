@@ -18,14 +18,8 @@
   },
   "homepage": "https://github.com/Saxxan/GoDog#readme",
   "dependencies": {
-    "axios": "^0.26.1",
-    "parcel-plugin-pug": "^0.3.1",
-    "pug": "^3.0.2"
+    "axios": "^0.26.1"
   },
-  "devDependencies": {
-    "@parcel/transformer-pug": "^2.4.0",
-    "parcel": "^2.4.0",
-    "parcel-bundler": "^1.12.5"
-  },
+  "devDependencies": {},
   "keywords": []
 }
