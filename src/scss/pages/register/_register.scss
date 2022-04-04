@@ -1,0 +1,40 @@
+.register {
+    @include sectionLayout(900px);
+
+    &__section {
+        padding: space("6");
+        cursor: pointer;
+
+        &__header {
+            margin: space("12") space("6");
+            padding: space("12");
+            background-color: $color-grey-dark;
+            border-radius: space("6");
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__icon {
+                fill: $color-white;
+                stroke: $color-grey-light;
+
+                &:not(.set) {
+                    transform: rotateZ(180deg);
+                    fill: $color-grey-light;
+                    stroke: $color-grey-light;
+                }
+            }
+        }
+
+        &__body {
+            padding: space("12");
+
+            transition: all .35s ease-in-out;
+            overflow: hidden;
+
+            &:not(.active) {
+                display: none;
+            }
+        }
+    }
+}

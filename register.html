@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoDog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+    <!-- Log in window -->
+    <div class="modal">
+        <button class="modal__btn--close login__close">
+            <svg class="x" width="48" height="48" viewBox="0 0 48 48" fill="none" class="x" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 2L2 8L18 24L2 40L8 46L24 30L40 46L46 40L30 24L46 8L40 2L24 18L8 2Z"/>
+            </svg>    
+        </button>
+        <h3 class="modal__title">Iniciar sesión</h3>
+        <input type="text" class="modal__input" placeholder="Email">
+        <input type="text" class="modal__input" placeholder="Contraseña">
+        <button class="modal__input__submit" onclick="window.location.pathname='/dashboard.html'">Iniciar sesión</button>
+    </div>
+
+    <!-- Topbar -->
+    <nav class="topbar">
+        <a class="topbar__logo" href="index.html">
+            <svg width="34" height="46" viewBox="0 0 34 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M5.00002 45C5.00002 45 5.51258 40.0214 6.50002 37C6.99 35.5008 8.00002 33.25 8.00002 33.25M9.50002 29.5C9.50002 29.5 8.77945 28.6462 8.50002 28C7.88 26.5662 8.50002 24 8.50002 24M9.50002 29.5L8.00002 33.25M9.50002 29.5C9.50002 29.5 10.6213 30.5118 11.5 31C12.3787 31.4882 14 32 14 32M6.50002 14.5L7.50002 15.5C7.50002 15.5 8.3175 18.209 8.50002 20C8.65839 21.554 8.50002 24 8.50002 24M6.50002 14.5H4.50002C4.50002 14.5 0.999959 8.5 2.00002 5.5C2.44531 4.1642 5.00002 3.49999 5.00002 3.49999M6.50002 14.5C6.50002 14.5 9.17642 11.3025 10.5 9C11.6758 6.95451 13 3.49999 13 3.49999V3M8.00002 2.5C8.00002 2.5 9.76539 1.47172 11 1.5C11.8049 1.51843 12.5 1.49998 13 2C13.2762 2.27614 13 3 13 3M13 3H21M21 3C21 3 20.8485 2.35992 21 2C21.3124 1.258 23 1.5 23 1.5C23 1.5 31.5528 1.86949 32 4.99999C32.5 8.5 30.5 12.5 29 14.5C29 14.5 28.0858 14.5 27.5 14.5M21 3C21 3 22.2627 6.78354 23.5 9C24.7945 11.319 25.9379 12.3521 27.5 14.5M27.5 14.5C26.9142 16.6479 26.2436 17.787 26 20C25.8291 21.5527 26 24 26 24M24.5 30C24.5 30 25.5 29 26 28C26.5 27 26 24 26 24M24.5 30C24.5 30 22.5 31.5 19.5 32M24.5 30C24.5 30 25.4142 31.7855 26 33.25M27.5 37C26.9142 35.5355 26.5858 34.7145 26 33.25M26 24C26 24 25 22 22.5 20.5M8.50002 24C8.50002 24 9.35604 22.7338 10 22C10.5464 21.3773 12 20.5 12 20.5M10.5 14.5C10.5 14.5 11.7044 13.8769 12.5 14C13.4648 14.1493 14.5 15.5 14.5 15.5M20 15.5C20 15.5 20.3887 14.3493 21 14C21.6782 13.6125 23 14 23 14M14 32C14 32 13.9477 33.2238 14.5 33.5C15.5 34 18 34 19 33.5C19.5523 33.2239 19.5 32 19.5 32M14 32L17 31.5M19.5 32L17 31.5M17 31.5V28M17 28L14 24C14 24 14.2706 22.8928 15 22.5C16.2035 21.852 18 22 19 22.5C19.7571 22.8785 20 24 20 24L17 28ZM8.00002 33.25C8.00002 33.25 10.6279 34.9036 12.5 35.5C13.2671 35.7444 13.7028 35.8876 14.5 36C15.5634 36.15 16.1866 36.15 17.25 36M26 33.25C24.3476 34.313 23.3419 34.8159 21.5 35.5C20.9212 35.715 20.6046 35.8745 20 36C18.9485 36.2182 18.3015 36.2182 17.25 36M17.25 36C17.1524 36.9763 17.0976 37.5237 17 38.5M17 38.5C16.3501 38.0667 15.6499 38.0667 15 38.5C14.1716 39.0523 14.1406 40.0715 14.5 41C14.911 42.0618 15.8615 42.5 17 42.5C18.1386 42.5 19.089 42.0618 19.5 41C19.8594 40.0715 19.8284 39.0523 19 38.5C18.3501 38.0667 17.6499 38.0667 17 38.5ZM28 40C28.3905 41.9526 29 45 29 45"
+                    stroke="white" stroke-width="2" />
+            </svg>
+            <h1 class="topbar__logo__title">GoDog</h1>
+        </a>
+        <section class="topbar__buttons">
+            <button class="topbar__buttons__button btn login">Log in</button>
+        </section>
+    </nav>
+
+    <!-- Register page -->
+    <section class="register">
+        <h2 class="register__title">Formulario de registro</h2>
+        <section class="register__section">
+            <header class="register__section__header">
+                <h3 class="register__section__header__title">Información general</h3>
+                <svg class="arrow--register register__section__header__icon set" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.17 10L24 26.7022L40.83 10L46 15.1671L24 37L2 15.1671L7.17 10Z"/>
+                </svg>                    
+            </header>
+            <section class="register__section__body active">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium animi nesciunt praesentium, natus deserunt quos nulla quo aliquid pariatur consectetur doloremque nobis? Cumque, ea! Ut officiis nisi obcaecati reiciendis!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium animi nesciunt praesentium, natus deserunt quos nulla quo aliquid pariatur consectetur doloremque nobis? Cumque, ea! Ut officiis nisi obcaecati reiciendis!</p>
+            </section>
+        </section>
+        <section class="register__section">
+            <header class="register__section__header">
+                <h3 class="register__section__header__title">Información de paseador</h3>
+                <svg class="arrow--register register__section__header__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.17 10L24 26.7022L40.83 10L46 15.1671L24 37L2 15.1671L7.17 10Z"/>
+                </svg> 
+            </header>
+            <section class="register__section__body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium animi nesciunt praesentium, natus deserunt quos nulla quo aliquid pariatur consectetur doloremque nobis? Cumque, ea! Ut officiis nisi obcaecati reiciendis!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium animi nesciunt praesentium, natus deserunt quos nulla quo aliquid pariatur consectetur doloremque nobis? Cumque, ea! Ut officiis nisi obcaecati reiciendis!</p>
+            </section>
+        </section>
+        <section class="register__section">
+            <header class="register__section__header">
+                <h3 class="register__section__header__title">Información de mascota</h3>
+                <svg class="arrow--register register__section__header__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.17 10L24 26.7022L40.83 10L46 15.1671L24 37L2 15.1671L7.17 10Z"/>
+                </svg> 
+            </header>
+            <section class="register__section__body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium animi nesciunt praesentium, natus deserunt quos nulla quo aliquid pariatur consectetur doloremque nobis? Cumque, ea! Ut officiis nisi obcaecati reiciendis!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium animi nesciunt praesentium, natus deserunt quos nulla quo aliquid pariatur consectetur doloremque nobis? Cumque, ea! Ut officiis nisi obcaecati reiciendis!</p>
+            </section>
+        </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__list__opt">Seguridad</li>
+            <li class="footer__list__opt">Garantía</li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__list__opt">Política de privacidad</li>
+            <li class="footer__list__opt">Política de cookies</li>
+            <li class="footer__list__opt">Términos y condiciones</li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__list__opt">Contacta</li>
+            <li class="footer__list__opt">Twitter</li>
+            <li class="footer__list__opt">Instagram</li>
+        </ul>
+    </footer>
+
+    <script src="/src/logInModal.js"></script>
+    <script src="/src/register.js"></script>
+</body>
