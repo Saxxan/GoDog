@@ -604,6 +604,7 @@ html, body {
 
 .cajacookies {
   display: none;
+  width: 99vw;
   background-color: #FFFFFF;
   color: #1B1A1A;
   padding: 12px;
