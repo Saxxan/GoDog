@@ -118,4 +118,4 @@ btnSubmit.addEventListener('click', function(){
     console.log(servicio);
 
     getUsers();
-})
+});
