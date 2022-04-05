@@ -7,7 +7,7 @@
         "price": "10",
         "mark": "9",
         "service": ["checkbox--paseo", "checkbox--visita", "checkbox--day", "checkbox--night"],
-        "img": "/src/media/paseadorMaria.webp",
+        "img": "/dist/media/paseadorMaria.webp",
         "description": "Mi pasión por los animales me hizo cualificarme para ello y actualmente trabajo en una clínica veterinaria. Con muchos años de experiencia ayudando a protectoras, y conviviendo con animales toda mi vida."
     },
     {
@@ -18,7 +18,7 @@
         "price": "8",
         "mark": "9",
         "service": ["checkbox--paseo", "checkbox--visita"],
-        "img": "/src/media/paseadorAlejandro.webp",
+        "img": "/dist/media/paseadorAlejandro.webp",
         "description": "He cuidado perros y gatos de vecinos y amigos cuando se han marchado en sus vacaciones. Les he cuidado, alimentado, les he dado sus paseos y les he entretenido con juegos. Causo buenas impresiones de primeras a la animales y siempre se arriman a mí."
     },
     {
@@ -29,7 +29,7 @@
         "price": "7",
         "mark": "7",
         "service": ["checkbox--day", "checkbox--night"],
-        "img": "/src/media/paseadorManuel.webp",
+        "img": "/dist/media/paseadorManuel.webp",
         "description": "Hola!!!! Soy estudiante de biología de primer año, y me encantan los animales. He tenido mascotas toda mi vida y me gusta mucho pasar tiempo con ellas."
     },
     {
@@ -40,7 +40,7 @@
         "price": "9",
         "mark": "9",
         "service": ["checkbox--paseo", "checkbox--visita", "checkbox--day"],
-        "img": "/src/media/paseadorSonia.webp",
+        "img": "/dist/media/paseadorSonia.webp",
         "description": "He cuidado de mascotas desde muy pequeña, tanto propias, como de familiares. Estoy acabando la carrera de Veterinaria y sólo puedo decir que todo lo que hago por los animales es con lo esencial: mucho amor y mucha paciencia."
     },
     {
@@ -51,7 +51,7 @@
         "price": "12",
         "mark": "9",
         "service": ["checkbox--day", "checkbox--night"],
-        "img": "/src/media/paseadorCarlos.webp",
+        "img": "/dist/media/paseadorCarlos.webp",
         "description": "Tengo un mestizo de 2 años y medio que se llama Churrete, es muy bueno y juega mucho con otros perros. Me gustan todas las razas de perros y a Churrete también. Puedo desplazarme por toda Valencia capital para realizar el paseo sin problema."
     },
     {
@@ -62,7 +62,7 @@
         "price": "12",
         "mark": "9",
         "service": ["checkbox--paseo", "checkbox--day", "checkbox--night"],
-        "img": "/src/media/paseadorCristina.webp",
+        "img": "/dist/media/paseadorCristina.webp",
         "description": "Estudio 4° de veterinaria y soy técnica superior en ganadería y auxiliar veterinaria. He estado 3 meses de auxiliar en clínica de pequeños animales. Desde que tengo 3 años he tenido claro que quiero ser veterinaria y desde siempre he compartido mi vida con todo tipo de animales."
     }
 ]
