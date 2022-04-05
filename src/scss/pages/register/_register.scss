@@ -3,16 +3,17 @@
 
     &__section {
         padding: space("6");
-        cursor: pointer;
 
         &__header {
             margin: space("12") space("6");
             padding: space("12");
             background-color: $color-grey-dark;
             border-radius: space("6");
+            @include boxShadow();
             display: flex;
             justify-content: space-between;
             align-items: center;
+            cursor: pointer;
 
             &__icon {
                 fill: $color-white;
@@ -28,12 +29,34 @@
 
         &__body {
             padding: space("12");
-
             transition: all .35s ease-in-out;
             overflow: hidden;
 
-            &:not(.active) {
-                display: none;
+            // &:not(.active) {
+            //     display: none;
+            // }
+
+            &__input {
+                max-width: 600px;
+                margin: space("18") auto;
+
+                &--servicios {
+                    max-width: 400px;
+                    margin: 0 auto;
+                    border: none;
+                }
+
+                &--servicio {
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: space("6");
+                }
+
+                &--textarea {
+                    border-radius: space("24");
+                }
             }
         }
     }

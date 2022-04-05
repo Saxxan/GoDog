@@ -53,8 +53,30 @@
                 </svg>                    
             </header>
             <section class="register__section__body active">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium animi nesciunt praesentium, natus deserunt quos nulla quo aliquid pariatur consectetur doloremque nobis? Cumque, ea! Ut officiis nisi obcaecati reiciendis!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium animi nesciunt praesentium, natus deserunt quos nulla quo aliquid pariatur consectetur doloremque nobis? Cumque, ea! Ut officiis nisi obcaecati reiciendis!</p>
+               <label for="" class="register__section__body__input form__input">
+                   <span class="form__input__tag">Nombre</span>
+                   <input type="text" class="form__input__box">
+                </label>
+               <label for="" class="register__section__body__input form__input">
+                   <span class="form__input__tag">Apellidos</span>
+                   <input type="text" class="form__input__box">
+                </label>
+               <label for="" class="register__section__body__input form__input">
+                   <span class="form__input__tag">Código Postal</span>
+                   <input type="text" class="form__input__box">
+                </label>
+               <label for="" class="register__section__body__input form__input">
+                   <span class="form__input__tag">Email</span>
+                   <input type="text" class="form__input__box">
+                </label>
+               <label for="" class="register__section__body__input form__input">
+                   <span class="form__input__tag">Contraseña</span>
+                   <input type="text" class="form__input__box">
+                </label>
+                <div class="register__section__body__input">
+                    <input type="checkbox">
+                    <label for="">Sí, estoy de acuerdo con los <a>Términos del Servicio</a> y acepto la <a>Política de Privacidad</a>.</label>
+                </div>
             </section>
         </section>
         <section class="register__section">
@@ -65,8 +87,42 @@
                 </svg> 
             </header>
             <section class="register__section__body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium animi nesciunt praesentium, natus deserunt quos nulla quo aliquid pariatur consectetur doloremque nobis? Cumque, ea! Ut officiis nisi obcaecati reiciendis!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium animi nesciunt praesentium, natus deserunt quos nulla quo aliquid pariatur consectetur doloremque nobis? Cumque, ea! Ut officiis nisi obcaecati reiciendis!</p>
+                <p for="" class="register__section__body__input form__input__tag--servicio">Servicio</p>
+                <fieldset class="register__section__body__input--servicios">
+                    <label for="" class="register__section__body__input--servicio">
+                        <input type="checkbox">
+                        <p>Paseo</p>
+                    </label>
+                    <label for="" class="register__section__body__input--servicio">
+                        <input type="checkbox">
+                        <p>Visita a domicilio</p>
+                    </label>
+                    <label for="" class="register__section__body__input--servicio">
+                        <input type="checkbox">
+                        <p>Guardería de día</p>
+                    </label>
+                    <label for="" class="register__section__body__input--servicio">
+                        <input type="checkbox">
+                        <p>Alojamiento de mascota</p>
+                    </label>
+                </fieldset>
+                <label class="search__input--text form__input register__section__body__input" for="">
+                    <span class="form__input__tag">Disponibilidad</span>
+                    <input class="form__input__box" type="date" id="from" name="from">
+                    <input class="form__input__box" type="date" id="to" name="to">
+                </label>
+                <label for="" class="register__section__body__input form__input">
+                    <span class="form__input__tag">Precio</span>
+                    <input type="text" class="form__input__box">
+                 </label>
+                 <label for="" class="register__section__body__input form__input">
+                    <span class="form__input__tag">Descripción</span>
+                    <textarea class="form__input__box register__section__body__input--textarea"></textarea>
+                 </label>
+                 <label for="" class="register__section__body__input form__input">
+                    <span class="form__input__tag">Fotos</span>
+                    <input type="file" class="form__input__box">
+                 </label>
             </section>
         </section>
         <section class="register__section">
@@ -77,10 +133,36 @@
                 </svg> 
             </header>
             <section class="register__section__body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium animi nesciunt praesentium, natus deserunt quos nulla quo aliquid pariatur consectetur doloremque nobis? Cumque, ea! Ut officiis nisi obcaecati reiciendis!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod laudantium animi nesciunt praesentium, natus deserunt quos nulla quo aliquid pariatur consectetur doloremque nobis? Cumque, ea! Ut officiis nisi obcaecati reiciendis!</p>
+                <label for="" class="register__section__body__input form__input">
+                    <span class="form__input__tag">Nombre</span>
+                    <input type="text" class="form__input__box">
+                 </label>
+                 <label for="" class="register__section__body__input form__input">
+                    <span class="form__input__tag">Raza</span>
+                    <input type="text" class="form__input__box">
+                 </label>
+                 <label for="" class="register__section__body__input form__input">
+                    <span class="form__input__tag">Peso</span>
+                    <input type="text" class="form__input__box">
+                 </label>
+                 <label for="" class="register__section__body__input form__input">
+                    <span class="form__input__tag">Edad</span>
+                    <input type="text" class="form__input__box">
+                 </label>
+                 <label for="" class="register__section__body__input form__input">
+                    <span class="form__input__tag">A tener en cuenta</span>
+                    <textarea class="form__input__box register__section__body__input--textarea"></textarea>
+                 </label>
+                 <label for="" class="register__section__body__input form__input">
+                    <span class="form__input__tag">Fotos</span>
+                    <input type="file" class="form__input__box">
+                 </label>
             </section>
         </section>
+
+        <button class="btn btn--register--big">
+            <p class="btn--register__text">Completar</p>
+        </button>
     </section>
 
     <!-- Footer -->
