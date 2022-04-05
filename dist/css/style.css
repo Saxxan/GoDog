@@ -761,7 +761,7 @@ html, body {
 
 .landing__Header {
   height: 40vh;
-  background-image: url("/dist/media/landing-header-image.webp");
+  background-image: url("../../../../dist/media/landing-header-image.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
