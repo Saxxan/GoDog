@@ -1,0 +1,23 @@
+// -----------$FOOTER
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    @include font-size(14px, 20px);
+    background-color: $color-grey-dark;
+
+    &__list {
+        list-style: none;
+        padding: space("6");
+        text-align: center;
+        
+        &__opt {
+            padding: space("6") 0;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

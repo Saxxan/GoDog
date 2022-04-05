@@ -1,0 +1,42 @@
+svg {
+    stroke: $color-main;
+    @include widthAndHeight(50px, 50px);
+
+    @include tablet-landscape-dimensions {
+        @include widthAndHeight(80px, 80px);
+    }
+}
+
+.tick {
+    fill: $color-main;
+    @include widthAndHeight(30px, 30px);
+}
+
+.x {
+    @include widthAndHeight(25px, 25px);
+    fill: $color-grey-light;
+    stroke: $color-grey-light;
+
+    &:hover {
+        fill: $color-white;
+        stroke: $color-grey-light;
+    }
+}
+
+.star {
+    @include widthAndHeight(20px, 20px);
+    fill: $color-sec;
+    stroke: $color-sec;
+}
+
+.dog, .user {
+    stroke: $color-main;
+
+    &:hover {
+        stroke: $color-main-tone-2;
+    }
+}
+
+.arrow--register {
+    @include widthAndHeight(30px, 30px);
+}

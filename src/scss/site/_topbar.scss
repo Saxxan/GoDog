@@ -1,0 +1,36 @@
+// -------------$TOPBAR
+
+.topbar {
+    height: 10vh;
+    background: linear-gradient(180deg , $color-main -26%, $color-main-tone-2 132%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        padding: space("12");
+
+        & svg {
+            stroke: $color-white;
+            width: 60px;
+            height: 60px;
+        }
+
+        &:link, &:visited, &:active {
+            text-decoration: none;
+            color: $color-white;
+        }
+    }
+
+    &__buttons {
+        margin-right: space("6");
+
+        &__button {
+            @include tablet-portrait-dimensions {
+                padding: space("6");
+            }
+        }
+    }
+}

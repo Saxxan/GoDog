@@ -1,0 +1,16 @@
+// ------------$HELPERS
+
+// landing section img
+img[class$="__img"] {
+    display: none;
+
+    @include tablet-landscape-dimensions {
+        display: block;
+    }
+}
+
+// landing sections container
+div[class$="__container"] {
+    display: flex;
+    flex-direction: row;
+}

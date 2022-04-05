@@ -1,0 +1,38 @@
+// ------------$TYPOGRAPHY
+
+h1 {
+    @include font-size(30px, 50px);
+}
+
+h2 {
+    @include font-size(25px, 35px);
+    padding: 0 space("12");
+}
+
+h3 {
+    @include font-size(21px, 30px);
+}
+
+h4 {
+    @include font-size(20px, 30px);
+}
+
+h5 {
+    @include font-size(18px, 27px);
+}
+
+h6 {
+    @include font-size(16px, 25px);
+}
+
+p, label {
+    @include font-size(15px, 20px);
+    margin: space("6") 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-title;
+    font-weight: 700;
+    margin: space("6") 0;
+}
+

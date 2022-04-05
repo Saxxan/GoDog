@@ -1,0 +1,25 @@
+{
+  "name": "godog",
+  "version": "1.0.0",
+  "description": "GoDog website plays a role in the contacts between pet owners and animal keepers. This website is a project of the ESAT Innovation School",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel watch ./src/*",
+    "build": "parcel build ./src/pug/*.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saxxan/GoDog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saxxan/GoDog/issues"
+  },
+  "homepage": "https://github.com/Saxxan/GoDog#readme",
+  "dependencies": {
+    "axios": "^0.26.1"
+  },
+  "devDependencies": {},
+  "keywords": []
+}

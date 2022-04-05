@@ -1,0 +1,125 @@
+
+// Font size mixin
+
+//  default font scale bounding
+$font-lock-min:  400px !default; 
+$font-lock-max: 1000px !default;
+
+@mixin font-size(
+  $min,                         // font-size 
+  $max: null,                   // optional maximum font size
+  $lock-min: $font-lock-min,  // optional minimum viewport width 
+  $lock-max: $font-lock-max   // optional maximum viewport width 
+  ){
+    & { font-size: $min; }
+    @if $max {
+      @media (min-width: $lock-min) { 
+        & { 
+          font-size: calc(
+            #{$min} + 
+            #{num($max) - num($min)} * 
+            (100vw - #{$lock-min}) / 
+            #{num($lock-max) - num($lock-min)}
+          ); 
+        } 
+      }
+      @media (min-width: $lock-max){ 
+        & { font-size: $max; } 
+      }
+    }
+}
+
+
+// Width responsive mixin
+
+@mixin width(
+  $min,                         // font-size 
+  $max: null,                   // optional maximum font size
+  $lock-min: $font-lock-min,  // optional minimum viewport width 
+  $lock-max: $font-lock-max   // optional maximum viewport width 
+  ){
+    & { width: $min; }
+    @if $max {
+      @media (min-width: $lock-min) { 
+        & { 
+          width: calc(
+            #{$min} + 
+            #{num($max) - num($min)} * 
+            (100vw - #{$lock-min}) / 
+            #{num($lock-max) - num($lock-min)}
+          ); 
+        } 
+      }
+      @media (min-width: $lock-max){ 
+        & { width: $max; } 
+      }
+    }
+}
+
+//  strip units helper function
+@function num($input){ 
+  @return $input/($input * 0 + 1); 
+}
+
+
+
+// Mediaqueries mixin
+
+@mixin phone-dimensions {
+  @media screen and (max-width: 500px) { @content; }
+}
+@mixin tablet-portrait-dimensions {
+  @media screen and (min-width: 500px) { @content; }
+}
+@mixin tablet-landscape-dimensions {
+  @media screen and (min-width: 800px) { @content; }
+}
+@mixin deskopt-dimensions {
+  @media screen and (min-width: 1280px) { @content; }
+}
+@mixin big-deskopt-dimensions {
+  @media screen and (min-width: 1920px) { @content; }
+}
+
+
+
+// Mixin basic style inputs
+
+@mixin inputStyle {
+  border: 2px solid $color-main;
+  border-radius: space("24");
+}
+
+
+// Mixin landing sections layout and dimensions
+
+@mixin sectionLayout($max-width) {
+  max-width: $max-width;
+  padding: space("12");
+  margin: 7.5vh auto;
+}
+
+
+// Mixin width and height
+
+@mixin widthAndHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+
+// Mixin box shadow
+
+@mixin boxShadow(){
+  box-shadow:
+    2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041),
+}
+
+// Mixin buttons basic properties
+
+@mixin btn() {
+  color: $color-white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}

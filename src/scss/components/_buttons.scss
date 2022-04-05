@@ -1,0 +1,141 @@
+// ---------------$BUTTONS
+
+.btn {
+    padding: space("6");
+    @include font-size(13px, 18px);
+    @include btn();
+    border-radius: space("24");
+}
+
+.btn--register {
+    @include width(110px, 150px);
+}
+
+.btn--register--big {
+    @include width(170px, 400px);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10vh;
+}
+
+.btn--register, .btn--register--big {
+    background-color: $color-sec;
+    border: 2px solid $color-white;
+    overflow: hidden;
+
+    &__text--hover {
+        position: absolute;
+        transform: translateX(-125%);
+        opacity: 0;
+    }
+
+    &:hover {
+        background: $color-sec-tone-2;
+        border: 2px solid $color-sec-tone-2;
+
+        .btn--register__text {
+
+            &--default {
+                opacity: 0;
+            }
+
+            &--hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.login {
+    background-color: transparent;
+    border: 2px solid $color-white;
+
+    &:hover {
+        background: $color-white;
+        color: $color-main;
+    }
+
+    &__close {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        padding: space("6") space("12");
+        margin: space("18");
+    }
+}
+
+.cta__search {
+    margin: space("12") 0 space("12") auto;
+    border-radius: space("42");
+    width: 250px;
+    display: grid;
+    place-content: center;
+    border: 3px solid $color-white;
+    background-color: $color-main-tone-2;
+    @include btn();
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: space("24");
+        padding: space("18");
+
+        &__tag {
+            @include font-size(20px, 30px);
+        }
+    
+        &__arrow {
+            float: right;
+            @include widthAndHeight(30px, 30px);
+            box-sizing: border-box;
+            transform: rotate(45deg);
+        
+            &::before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                border-width: 5px 5px 0 0;
+                border-style: solid;
+                border-color: $color-white;
+                transition: .2s ease;
+                display: block;
+                transform-origin: 100% 0;
+            }
+    
+        
+            &:after {
+                content: '';
+                float: left;
+                position: relative;
+                top: -105%;
+                width: 100%;
+                height: 100%;
+                border-width: 0 5px 0 0;
+                border-style: solid;
+                border-color: $color-white;
+                transform-origin: 100% 0;
+                transition: .2s ease;
+            }
+        }
+    }
+
+    &:hover {
+        border-color: $color-main;
+        background-color: $color-main;
+
+        .cta__search__content {
+            &__arrow::after {
+                transform: rotate(45deg);
+                border-color: $color-white;
+                height: 120%;
+            }
+
+            &__arrow::before {
+                border-color: $color-white;
+                transform: scale(.8);
+            }
+        }
+    }
+}

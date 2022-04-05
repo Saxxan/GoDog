@@ -1,0 +1,28 @@
+.landing__servicios {
+    @include sectionLayout (900px);
+
+    &__list {
+        list-style: none;
+        margin-left: space("12");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        &__servicio {
+            display: flex;
+            align-items: center;
+            margin: space("18") auto;
+            gap: space("6");
+
+            @include tablet-landscape-dimensions {
+                gap: space("36");
+            }
+
+            &__info {
+                padding: space("12");
+                width: 70%;
+            }
+        }
+    }
+}
