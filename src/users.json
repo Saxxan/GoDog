@@ -8,7 +8,7 @@
         "mark": "9",
         "service": ["checkbox--paseo", "checkbox--visita", "checkbox--day", "checkbox--night"],
         "img": "/src/media/paseadorMaria.webp",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam voluptatem nemo doloribus molestiae corrupti, iure, repellat, officiis minus quaerat ipsa ullam inventore accusamus nobis et optio quos placeat nihil."
+        "description": "Mi pasión por los animales me hizo cualificarme para ello y actualmente trabajo en una clínica veterinaria. Con muchos años de experiencia ayudando a protectoras, y conviviendo con animales toda mi vida."
     },
     {
         "name": "Alejandro Sánchez",
@@ -19,7 +19,7 @@
         "mark": "9",
         "service": ["checkbox--paseo", "checkbox--visita"],
         "img": "/src/media/paseadorAlejandro.webp",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam voluptatem nemo doloribus molestiae corrupti, iure, repellat, officiis minus quaerat ipsa ullam inventore accusamus nobis et optio quos placeat nihil."
+        "description": "He cuidado perros y gatos de vecinos y amigos cuando se han marchado en sus vacaciones. Les he cuidado, alimentado, les he dado sus paseos y les he entretenido con juegos. Causo buenas impresiones de primeras a la animales y siempre se arriman a mí."
     },
     {
         "name": "Manuel Gutiérrez",
@@ -30,7 +30,7 @@
         "mark": "7",
         "service": ["checkbox--day", "checkbox--night"],
         "img": "/src/media/paseadorManuel.webp",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam voluptatem nemo doloribus molestiae corrupti, iure, repellat, officiis minus quaerat ipsa ullam inventore accusamus nobis et optio quos placeat nihil."
+        "description": "Hola!!!! Soy estudiante de biología de primer año, y me encantan los animales. He tenido mascotas toda mi vida y me gusta mucho pasar tiempo con ellas."
     },
     {
         "name": "Sonia Pérez",
@@ -41,18 +41,18 @@
         "mark": "9",
         "service": ["checkbox--paseo", "checkbox--visita", "checkbox--day"],
         "img": "/src/media/paseadorSonia.webp",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam voluptatem nemo doloribus molestiae corrupti, iure, repellat, officiis minus quaerat ipsa ullam inventore accusamus nobis et optio quos placeat nihil."
+        "description": "He cuidado de mascotas desde muy pequeña, tanto propias, como de familiares. Estoy acabando la carrera de Veterinaria y sólo puedo decir que todo lo que hago por los animales es con lo esencial: mucho amor y mucha paciencia."
     },
     {
         "name": "Carlos Muñoz",
         "from": "2022-04-25",
         "to": "2022-05-05",
-        "cp": "46020",
+        "cp": "46003",
         "price": "12",
         "mark": "9",
         "service": ["checkbox--day", "checkbox--night"],
         "img": "/src/media/paseadorCarlos.webp",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam voluptatem nemo doloribus molestiae corrupti, iure, repellat, officiis minus quaerat ipsa ullam inventore accusamus nobis et optio quos placeat nihil."
+        "description": "Tengo un mestizo de 2 años y medio que se llama Churrete, es muy bueno y juega mucho con otros perros. Me gustan todas las razas de perros y a Churrete también. Puedo desplazarme por toda Valencia capital para realizar el paseo sin problema."
     },
     {
         "name": "Cristina Sanz",
@@ -63,6 +63,6 @@
         "mark": "9",
         "service": ["checkbox--paseo", "checkbox--day", "checkbox--night"],
         "img": "/src/media/paseadorCristina.webp",
-        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam voluptatem nemo doloribus molestiae corrupti, iure, repellat, officiis minus quaerat ipsa ullam inventore accusamus nobis et optio quos placeat nihil."
+        "description": "Estudio 4° de veterinaria y soy técnica superior en ganadería y auxiliar veterinaria. He estado 3 meses de auxiliar en clínica de pequeños animales. Desde que tengo 3 años he tenido claro que quiero ser veterinaria y desde siempre he compartido mi vida con todo tipo de animales."
     }
 ]
