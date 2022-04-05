@@ -114,3 +114,12 @@ $font-lock-max: 1000px !default;
   box-shadow:
     2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041),
 }
+
+// Mixin buttons basic properties
+
+@mixin btn() {
+  color: $color-white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
