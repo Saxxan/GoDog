@@ -72,9 +72,9 @@ div[class$=__container] {
   color: #FFFFFF;
   font-weight: 700;
   cursor: pointer;
-  border-radius: 24px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  border-radius: 24px;
 }
 .btn {
   font-size: 13px;
@@ -161,6 +161,101 @@ div[class$=__container] {
   border: none;
   padding: 6px 12px;
   margin: 18px;
+}
+
+.cta__search {
+  margin: 12px auto;
+  border-radius: 42px;
+  width: 250px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border: 3px solid #FFFFFF;
+  background-color: #8cd9d2;
+  color: #FFFFFF;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.cta__search__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  padding: 18px;
+}
+.cta__search__content__tag {
+  font-size: 20px;
+}
+@media (min-width: 400px) {
+  .cta__search__content__tag {
+    font-size: calc( 20px + 10 * (100vw - 400px) / 600 );
+  }
+}
+@media (min-width: 1000px) {
+  .cta__search__content__tag {
+    font-size: 30px;
+  }
+}
+.cta__search__content__arrow {
+  float: right;
+  width: 25px;
+  height: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.cta__search__content__arrow::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: #FFFFFF;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  display: block;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+.cta__search__content__arrow:after {
+  content: "";
+  float: left;
+  position: relative;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  border-width: 0 5px 0 0;
+  border-style: solid;
+  border-color: #FFFFFF;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.cta__search:hover {
+  border-color: #11978c;
+  background-color: #11978c;
+}
+.cta__search:hover .cta__search__content__arrow::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-color: #FFFFFF;
+  height: 120%;
+}
+.cta__search:hover .cta__search__content__arrow::before {
+  border-color: #FFFFFF;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .cards {
