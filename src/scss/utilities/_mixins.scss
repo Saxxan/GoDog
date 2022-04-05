@@ -96,7 +96,7 @@ $font-lock-max: 1000px !default;
 @mixin sectionLayout($max-width) {
   max-width: $max-width;
   padding: space("12");
-  margin: 0 auto 7.5vh auto;
+  margin: 7.5vh auto;
 }
 
 
