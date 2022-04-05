@@ -30,7 +30,7 @@ function printCard(user){
         </header>
         <main class="card__body">
             <div class="card__body__text">
-                <p class="card__body__text__date">Disponible de ${from} a ${to}</p>
+                <p class="card__body__text__date">Disponible en la fecha seleccionada</p>
                 <p class="card__body__text__cp">${user.cp}</p>
                 <p class="card__body__text__info">${user.description}</p>
             </div>
