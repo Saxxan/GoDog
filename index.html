@@ -24,7 +24,7 @@
         <h3 class="modal__title">Iniciar sesión</h3>
         <input type="text" class="modal__input" placeholder="Email">
         <input type="text" class="modal__input" placeholder="Contraseña">
-        <button class="modal__input__submit" onclick="window.location.pathname='dashboard.html'">Iniciar sesión</button>
+        <button class="modal__input__submit" onclick="window.location.pathname='dist/dashboard.html'">Iniciar sesión</button>
     </div>
 
     <!-- Modal aceptar cookies -->
@@ -47,7 +47,7 @@
         </a>
         <section class="topbar__buttons">
             <button class="topbar__buttons__button btn login">Log in</button>
-            <button class="topbar__buttons__button btn btn--register" onclick="window.location.pathname='register.html'">
+            <button class="topbar__buttons__button btn btn--register" onclick="window.location.pathname='dist/register.html'">
                     <span class="btn--register__text--default">Hazte cuidador</span>
                     <span class="btn--register__text--hover">Regístrate</span>
             </button>
@@ -70,7 +70,7 @@
     <!-- Landing search CTA -->
     <section class="search" action="">
         <h2 class="search__title">Busca a tu cuidador ideal ya!</h2>
-        <button class="cta__search" value="Buscar" type="button" onclick="window.location.pathname='search.html'">
+        <button class="cta__search" value="Buscar" type="button" onclick="window.location.pathname='dist/search.html'">
             <div class="cta__search__content">
                 <p class="cta__search__content__tag">Buscar</p>
                 <div class="cta__search__content__arrow"></div>
@@ -116,7 +116,7 @@
                     los periodos que esté fuera de casa.</p>
             </li>
         </ul>
-        <img class="landing__servicios__img" src="/dist/media/img-servicios.webp" alt="">
+        <img class="landing__servicios__img" src="dist/media/img-servicios.webp" alt="">
         </div>
     </section>
 
@@ -125,7 +125,7 @@
     <section class="landing__branding">
         <h2 class="landing__branding__title">Por qué GoDog</h2>
         <div class="landing__branding__container">
-            <img class="landing__branding__img" src="/dist/media/landing-branding.webp" alt="">
+            <img class="landing__branding__img" src="dist/media/landing-branding.webp" alt="">
             <ul class="landing__branding__list">
                 <li class="landing__branding__list__perk">
                     <svg class="tick" width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -204,7 +204,7 @@
     </section>
 
     <!-- CTA footer -->
-    <button class="btn btn--register--big" onclick="window.location.pathname='register.html'">
+    <button class="btn btn--register--big" onclick="window.location.pathname='dist/register.html'">
         <p class="btn--register__text">
             <span class="btn--register__text--default">Hazte cuidador</span>
             <span class="btn--register__text--hover">Regístrate</span>
@@ -229,8 +229,8 @@
         </ul>
     </footer>
 
-    <script src="/node_modules/axios/dist/axios.min.js"></script>
-    <script src="/dist/logInModal.js"></script>
-    <script src="/dist/cookies.js"></script>
-    <script src="/dist/index.js"></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="dist/logInModal.js"></script>
+    <script src="dist/cookies.js"></script>
+    <script src="dist/index.js"></script>
 </body>
