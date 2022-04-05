@@ -1233,4 +1233,8 @@ html, body {
 }
 .footer__list__opt {
   padding: 6px 0;
+  cursor: pointer;
+}
+.footer__list__opt:hover {
+  text-decoration: underline;
 }

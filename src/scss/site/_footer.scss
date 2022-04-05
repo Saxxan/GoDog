@@ -13,6 +13,11 @@
         
         &__opt {
             padding: space("6") 0;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
