@@ -27,10 +27,10 @@ div[class$=__container] {
           transform: translate(-50%, -50%);
   background-color: #474747;
   border-radius: 6px;
-  z-index: 2;
+  z-index: 10;
   display: none;
-  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
-          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -90,60 +90,60 @@ div[class$=__container] {
   }
 }
 
-.register {
+.btn--register {
   width: 110px;
 }
 @media (min-width: 400px) {
-  .register {
+  .btn--register {
     width: calc( 110px + 40 * (100vw - 400px) / 600 );
   }
 }
 @media (min-width: 1000px) {
-  .register {
+  .btn--register {
     width: 150px;
   }
 }
 
-.register--big {
+.btn--register--big {
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   margin-bottom: 10vh;
 }
-.register--big {
+.btn--register--big {
   width: 170px;
 }
 @media (min-width: 400px) {
-  .register--big {
+  .btn--register--big {
     width: calc( 170px + 230 * (100vw - 400px) / 600 );
   }
 }
 @media (min-width: 1000px) {
-  .register--big {
+  .btn--register--big {
     width: 400px;
   }
 }
 
-.register, .register--big {
+.btn--register, .btn--register--big {
   background-color: #a180e0;
   border: 2px solid #FFFFFF;
   overflow: hidden;
 }
-.register__text--hover, .register--big__text--hover {
+.btn--register__text--hover, .btn--register--big__text--hover {
   position: absolute;
   -webkit-transform: translateX(-125%);
           transform: translateX(-125%);
   opacity: 0;
 }
-.register:hover, .register--big:hover {
+.btn--register:hover, .btn--register--big:hover {
   background: #5127a0;
   border: 2px solid #5127a0;
 }
-.register:hover .register__text--default, .register--big:hover .register__text--default {
+.btn--register:hover .btn--register__text--default, .btn--register--big:hover .btn--register__text--default {
   opacity: 0;
 }
-.register:hover .register__text--hover, .register--big:hover .register__text--hover {
+.btn--register:hover .btn--register__text--hover, .btn--register--big:hover .btn--register__text--hover {
   opacity: 1;
 }
 
@@ -166,14 +166,14 @@ div[class$=__container] {
 .cards {
   max-width: 900px;
   padding: 12px;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 7.5vh auto;
 }
 
 .card {
   padding: 12px;
   background-color: #474747;
-  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
-          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
   border-radius: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,23 +369,23 @@ input[class^=form__input], [class^=form__input__tag] {
 }
 .form__input__servicios input[id^=checkbox--]:nth-of-type(1):checked ~ label:nth-of-type(1) {
   background-color: #474747;
-  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
-          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
 }
 .form__input__servicios input[id^=checkbox--]:nth-of-type(2):checked ~ label:nth-of-type(2) {
   background-color: #474747;
-  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
-          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
 }
 .form__input__servicios input[id^=checkbox--]:nth-of-type(3):checked ~ label:nth-of-type(3) {
   background-color: #474747;
-  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
-          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
 }
 .form__input__servicios input[id^=checkbox--]:nth-of-type(4):checked ~ label:nth-of-type(4) {
   background-color: #474747;
-  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
-          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
 }
 .form__input__submit {
   margin: 10px auto;
@@ -477,6 +477,11 @@ svg {
 }
 .dog:hover, .user:hover {
   stroke: #8cd9d2;
+}
+
+.arrow--register {
+  width: 30px;
+  height: 30px;
 }
 
 h1 {
@@ -740,13 +745,13 @@ html, body {
 .search {
   max-width: 900px;
   padding: 12px;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 7.5vh auto;
 }
 
 .landing__servicios {
   max-width: 900px;
   padding: 12px;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 7.5vh auto;
 }
 .landing__servicios__list {
   list-style: none;
@@ -785,7 +790,7 @@ html, body {
 .landing__branding {
   max-width: 900px;
   padding: 12px;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 7.5vh auto;
 }
 @media screen and (min-width: 800px) {
   .landing__branding__title {
@@ -825,7 +830,7 @@ html, body {
 .dashboard {
   max-width: 1200px;
   padding: 12px;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 7.5vh auto;
 }
 .dashboard__container {
   display: -webkit-box;
@@ -839,8 +844,8 @@ html, body {
   border-radius: 6px;
   margin: 6px;
   background-color: rgba(255, 255, 255, 0.068);
-  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
-          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041), 20px 20px 92px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1035,6 +1040,75 @@ html, body {
 .messages__message:hover {
   background-color: #474747;
   border-radius: 6px;
+}
+
+.register {
+  max-width: 900px;
+  padding: 12px;
+  margin: 0 auto 7.5vh auto;
+}
+.register__section {
+  padding: 6px;
+}
+.register__section__header {
+  margin: 12px 6px;
+  padding: 12px;
+  background-color: #474747;
+  border-radius: 6px;
+  -webkit-box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
+          box-shadow: 2.7px 2.7px 11.4px rgba(0, 0, 0, 0.041);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.register__section__header__icon {
+  fill: #FFFFFF;
+  stroke: #7E7E7E;
+}
+.register__section__header__icon:not(.set) {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+  fill: #7E7E7E;
+  stroke: #7E7E7E;
+}
+.register__section__body {
+  padding: 12px;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  overflow: hidden;
+}
+.register__section__body__input {
+  max-width: 600px;
+  margin: 18px auto;
+}
+.register__section__body__input--servicios {
+  max-width: 400px;
+  margin: 0 auto;
+  border: none;
+}
+.register__section__body__input--servicio {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+.register__section__body__input--textarea {
+  border-radius: 24px;
 }
 
 .footer {

@@ -47,9 +47,9 @@
         </a>
         <section class="topbar__buttons">
             <button class="topbar__buttons__button btn login">Log in</button>
-            <button class="topbar__buttons__button btn register">
-                    <span class="register__text--default">Hazte cuidador</span>
-                    <span class="register__text--hover">Regístrate</span>
+            <button class="topbar__buttons__button btn btn--register" onclick="window.location.pathname='/register.html'">
+                    <span class="btn--register__text--default">Hazte cuidador</span>
+                    <span class="btn--register__text--hover">Regístrate</span>
             </button>
         </section>
     </nav>
@@ -68,16 +68,16 @@
     </header>
 
     <!-- Landing search filtered form -->
-    <form class="search" action="">
+    <section class="search" action="">
         <h2 class="search__title">Busca a tu cuidador ya!</h2>
-        <label class="search__input--text form__input" for="">
+        <!-- <label class="search__input--text form__input" for="">
             <span class="form__input__tag">Dónde</span>
             <input class="form__input__box" type="text" id="cp" name="cp" placeholder="Código postal">
         </label>
         <label class="search__input--text form__input" for="">
             <span class="form__input__tag">Cuándo</span>
-            <input class="form__input__box" type="date" id="cp" name="cp">
-            <input class="form__input__box" type="date" id="cp" name="cp">
+            <input class="form__input__box" type="date" id="from" name="from">
+            <input class="form__input__box" type="date" id="to" name="to">
         </label>
 
         <p class="form__input__tag--servicio" for="">Qué servicio buscas</p>
@@ -114,9 +114,9 @@
                 </svg>
                 <p>Alojamiento de mascota</p>
             </label>
-        </fieldset>
-        <button class="form__input__submit" value="Buscar" type="button" onclick="window.location.pathname='/search.html'">Buscar</button>
-    </form>
+        </fieldset> -->
+        <button class="form__input__submit" value="Buscar" type="button" onclick="window.location.pathname='search.html'">Buscar</button>
+    </section>
 
 
     <!-- Servicios -->
@@ -245,10 +245,10 @@
     </section>
 
     <!-- CTA footer -->
-    <button class="btn register--big">
-        <p class="register__text">
-            <span class="register__text--default">Hazte cuidador</span>
-            <span class="register__text--hover">Regístrate</span>
+    <button class="btn btn--register--big">
+        <p class="btn--register__text">
+            <span class="btn--register__text--default">Hazte cuidador</span>
+            <span class="btn--register__text--hover">Regístrate</span>
         </p>
     </button>
 

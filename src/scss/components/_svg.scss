@@ -36,3 +36,7 @@ svg {
         stroke: $color-main-tone-2;
     }
 }
+
+.arrow--register {
+    @include widthAndHeight(30px, 30px);
+}

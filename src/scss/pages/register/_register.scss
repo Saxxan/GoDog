@@ -1,0 +1,63 @@
+.register {
+    @include sectionLayout(900px);
+
+    &__section {
+        padding: space("6");
+
+        &__header {
+            margin: space("12") space("6");
+            padding: space("12");
+            background-color: $color-grey-dark;
+            border-radius: space("6");
+            @include boxShadow();
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            &__icon {
+                fill: $color-white;
+                stroke: $color-grey-light;
+
+                &:not(.set) {
+                    transform: rotateZ(180deg);
+                    fill: $color-grey-light;
+                    stroke: $color-grey-light;
+                }
+            }
+        }
+
+        &__body {
+            padding: space("12");
+            transition: all .35s ease-in-out;
+            overflow: hidden;
+
+            // &:not(.active) {
+            //     display: none;
+            // }
+
+            &__input {
+                max-width: 600px;
+                margin: space("18") auto;
+
+                &--servicios {
+                    max-width: 400px;
+                    margin: 0 auto;
+                    border: none;
+                }
+
+                &--servicio {
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: space("6");
+                }
+
+                &--textarea {
+                    border-radius: space("24");
+                }
+            }
+        }
+    }
+}
