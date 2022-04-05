@@ -166,7 +166,7 @@ div[class$=__container] {
 .cards {
   max-width: 900px;
   padding: 12px;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 7.5vh auto;
 }
 
 .card {
@@ -745,13 +745,13 @@ html, body {
 .search {
   max-width: 900px;
   padding: 12px;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 7.5vh auto;
 }
 
 .landing__servicios {
   max-width: 900px;
   padding: 12px;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 7.5vh auto;
 }
 .landing__servicios__list {
   list-style: none;
@@ -790,7 +790,7 @@ html, body {
 .landing__branding {
   max-width: 900px;
   padding: 12px;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 7.5vh auto;
 }
 @media screen and (min-width: 800px) {
   .landing__branding__title {
@@ -830,7 +830,7 @@ html, body {
 .dashboard {
   max-width: 1200px;
   padding: 12px;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 7.5vh auto;
 }
 .dashboard__container {
   display: -webkit-box;
@@ -1045,7 +1045,7 @@ html, body {
 .register {
   max-width: 900px;
   padding: 12px;
-  margin: 0 auto 10vh auto;
+  margin: 0 auto 7.5vh auto;
 }
 .register__section {
   padding: 6px;
