@@ -66,7 +66,7 @@
 }
 
 .cta__search {
-    margin: space("12") auto;
+    margin: space("12") 0 space("12") auto;
     border-radius: space("42");
     width: 250px;
     display: grid;
@@ -88,7 +88,7 @@
     
         &__arrow {
             float: right;
-            @include widthAndHeight(25px, 25px);
+            @include widthAndHeight(30px, 30px);
             box-sizing: border-box;
             transform: rotate(45deg);
         
@@ -109,14 +109,14 @@
                 content: '';
                 float: left;
                 position: relative;
-                top: -100%;
+                top: -105%;
                 width: 100%;
                 height: 100%;
                 border-width: 0 5px 0 0;
                 border-style: solid;
                 border-color: $color-white;
                 transform-origin: 100% 0;
-                transition:.2s ease;
+                transition: .2s ease;
             }
         }
     }
