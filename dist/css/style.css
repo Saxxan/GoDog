@@ -17,6 +17,10 @@ div[class$=__container] {
           flex-direction: row;
 }
 
+a {
+  text-decoration: none;
+}
+
 .modal {
   width: 350px;
   height: 400px;
