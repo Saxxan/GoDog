@@ -49,10 +49,12 @@
         </a>
         <section class="topbar__buttons">
             <button class="topbar__buttons__button btn login">Log in</button>
-            <button class="topbar__buttons__button btn btn--register" onclick="window.location.pathname='dist/register.html'">
+            <a href="dist/register.html">
+                <button class="topbar__buttons__button btn btn--register">
                     <span class="btn--register__text--default">Hazte cuidador</span>
                     <span class="btn--register__text--hover">Regístrate</span>
-            </button>
+                </button>
+            </a>
         </section>
     </nav>
 
@@ -72,12 +74,14 @@
     <!-- Landing search CTA -->
     <section class="search" action="">
         <h2 class="search__title">Busca a tu cuidador ideal ya!</h2>
-        <button class="cta__search" value="Buscar" type="button" onclick="window.location.pathname='dist/search.html'">
-            <div class="cta__search__content">
-                <p class="cta__search__content__tag">Buscar</p>
-                <div class="cta__search__content__arrow"></div>
-            </div>
-        </button>
+        <a href="dist/search.html">
+            <button class="cta__search" value="Buscar" type="button">
+                <div class="cta__search__content">
+                    <p class="cta__search__content__tag">Buscar</p>
+                    <div class="cta__search__content__arrow"></div>
+                </div>
+            </button>
+        </a>
     </section>
 
 
@@ -206,12 +210,14 @@
     </section>
 
     <!-- CTA footer -->
-    <button class="btn btn--register--big" onclick="window.location.pathname='dist/register.html'">
-        <p class="btn--register__text">
-            <span class="btn--register__text--default">Hazte cuidador</span>
-            <span class="btn--register__text--hover">Regístrate</span>
-        </p>
-    </button>
+    <a href="dist/register.html">
+        <button class="btn btn--register--big">
+            <p class="btn--register__text">
+                <span class="btn--register__text--default">Hazte cuidador</span>
+                <span class="btn--register__text--hover">Regístrate</span>
+            </p>
+        </button>
+    </a>
 
     <!-- Footer -->
     <footer class="footer">
