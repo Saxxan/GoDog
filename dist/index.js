@@ -1,6 +1,6 @@
 // -------- ARCHIVO JS RECOPILATORIO FUNCIONES
 
-const usersURL = '/dist/users.json';
+const usersURL = 'users.json';
 const cards = document.querySelector('.cards__container');
 var cp = '';
 var from = new Date();
