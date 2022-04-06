@@ -24,7 +24,9 @@
         <h3 class="modal__title">Iniciar sesión</h3>
         <input type="text" class="modal__input" placeholder="Email">
         <input type="text" class="modal__input" placeholder="Contraseña">
-        <button class="modal__input__submit" onclick="window.location.pathname='dashboard.html'">Iniciar sesión</button>
+        <a href="dashboard.html">
+            <button class="modal__input__submit">Iniciar sesión</button>
+        </a>
     </div>
 
     <!-- Topbar -->
@@ -39,10 +41,12 @@
         </a>
         <section class="topbar__buttons">
             <button class="topbar__buttons__button btn login">Log in</button>
-            <button class="topbar__buttons__button btn btn--register" onclick="window.location.pathname='register.html'">
+            <a href="register.html">
+                <button class="topbar__buttons__button btn btn--register">
                     <span class="btn--register__text--default">Hazte cuidador</span>
                     <span class="btn--register__text--hover">Regístrate</span>
-            </button>
+                </button>
+            </a>
         </section>
     </nav>
 

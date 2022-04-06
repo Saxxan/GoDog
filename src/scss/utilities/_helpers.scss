@@ -14,3 +14,8 @@ div[class$="__container"] {
     display: flex;
     flex-direction: row;
 }
+
+// link elements no decoration
+a {
+    text-decoration: none;
+}
